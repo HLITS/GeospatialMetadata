@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:record xmlns:marc="http://www.loc.gov/MARC21/slim" xmlns="http://www.loc.gov/MARC21/slim" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:xlink="http://www.w3.org/TR/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/MARC21/slim   http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+<!-- http://webservices.lib.harvard.edu/rest/marc/hollis/990138742350203941 -->
+<marc:leader>00000nem a22     Ii 4500</marc:leader>
+<controlfield tag="001">990138742350203941</controlfield>
+<controlfield tag="005">20140916143145.0</controlfield>
+<controlfield tag="008">131218m17471751ne d     |a||  |1|  fre d</controlfield>
+<datafield ind1="0" ind2=" " tag="034">
+<subfield code="a">a</subfield>
+    <subfield code="b">55555</subfield>
+<subfield code="d">E0070352</subfield>
+<subfield code="e">E0071311</subfield>
+<subfield code="f">N0434939</subfield>
+<subfield code="g">N0433424</subfield>
+</datafield>
+<datafield ind1=" " ind2=" " tag="035">
+<subfield code="a">(MH)013874235HVD01-Aleph</subfield>
+</datafield>
+<datafield ind1=" " ind2=" " tag="035">
+<subfield code="a">(OCoLC)868836322</subfield>
+</datafield>
+<datafield ind1=" " ind2=" " tag="040">
+<subfield code="b">eng</subfield>
+<subfield code="e">rda</subfield>
+</datafield>
+<datafield ind1=" " ind2="4" tag="050">
+<subfield code="a">G5833.A35 1747</subfield>
+<subfield code="b">.R2</subfield>
+</datafield>
+<datafield ind1=" " ind2=" " tag="052">
+<subfield code="a">5833</subfield>
+</datafield>
+<datafield ind1="2" ind2=" " tag="110">
+<subfield code="a">R. &amp; J. Ottens.</subfield>
+</datafield>
+<datafield ind1="1" ind2="0" tag="245">
+<subfield code="a">Plan du passage du Var, fait le 30 Nov. 1746 :</subfield>
+<subfield code="b">par les armées combinées Imperiales &amp; Sardinoises sous les Ordres du Comte de Broune.</subfield>
+</datafield>
+<datafield ind1=" " ind2=" " tag="255">
+<subfield code="a">1:5555</subfield>
+<subfield code="c">(E 7°03ʹ52ʺ--E 7°13ʹ11ʺ/N 43°49ʹ39ʺ--N 43°34ʹ24ʺ).</subfield>
+</datafield>
+<datafield ind1=" " ind2="1" tag="264">
+<subfield code="a">Amsterdam :</subfield>
+<subfield code="b">Chez R. &amp; I. Ottens,</subfield>
+<subfield code="c">[1747?]</subfield>
+</datafield>
+<datafield ind1=" " ind2=" " tag="300">
+<subfield code="a">1 map :</subfield>
+<subfield code="b">hand color ;</subfield>
+<subfield code="c">35.0 x 48.9 cm</subfield>
+</datafield>
+<datafield ind1=" " ind2=" " tag="336">
+<subfield code="a">cartographic image</subfield>
+<subfield code="b">cri</subfield>
+<subfield code="2">rdacontent</subfield>
+</datafield>
+<datafield ind1=" " ind2=" " tag="337">
+<subfield code="a">unmediated</subfield>
+<subfield code="b">n</subfield>
+<subfield code="2">rdamedia</subfield>
+</datafield>
+<datafield ind1=" " ind2=" " tag="338">
+<subfield code="a">sheet</subfield>
+<subfield code="b">nb</subfield>
+<subfield code="2">rdacarrier</subfield>
+</datafield>
+<datafield ind1=" " ind2=" " tag="530">
+<subfield code="a">Also available online.</subfield>
+</datafield>
+<datafield ind1=" " ind2=" " tag="500">
+<subfield code="a">Relief shown by hachures</subfield>
+</datafield>
+<datafield ind1=" " ind2=" " tag="500">
+<subfield code="a">Includes index.</subfield>
+</datafield>
+<datafield ind1=" " ind2="0" tag="650">
+<subfield code="a">Coasts</subfield>
+<subfield code="z">France</subfield>
+<subfield code="z">Alpes-Maritimes</subfield>
+<subfield code="v">Maps</subfield>
+<subfield code="v">Early works to 1800.</subfield>
+</datafield>
+<datafield ind1=" " ind2="0" tag="651">
+<subfield code="a">Alpes-Maritimes (France)</subfield>
+<subfield code="v">Maps</subfield>
+<subfield code="v">Early works to 1800.</subfield>
+</datafield>
+<datafield ind1=" " ind2="7" tag="655">
+<subfield code="a">Early maps.</subfield>
+<subfield code="2">lcgft</subfield>
+</datafield>
+<datafield ind1=" " ind2="7" tag="655">
+<subfield code="a">Military maps.</subfield>
+<subfield code="2">lcgft</subfield>
+</datafield>
+<datafield ind1=" " ind2="0" tag="830">
+<subfield code="a">Harvard Map Collection digital maps.</subfield>
+<subfield code="p">France.</subfield>
+<subfield code="p">Alpes-Maritimes.</subfield>
+<subfield code="5">net</subfield>
+</datafield>
+<datafield ind1=" " ind2=" " tag="900">
+<subfield code="a">013874235</subfield>
+</datafield>
+<datafield ind1=" " ind2=" " tag="998">
+<subfield code="a">NO-OVERLAY</subfield>
+</datafield>
+<datafield ind1=" " ind2=" " tag="AVA">
+<subfield code="0">990138742350203941</subfield>
+<subfield code="8">222172557050003941</subfield>
+<subfield code="a">01HVD_INST</subfield>
+<subfield code="b">MAP</subfield>
+<subfield code="c">MAP-LC</subfield>
+<subfield code="d">G5833.A35 1747 .R2</subfield>
+<subfield code="e">available</subfield>
+<subfield code="f">1</subfield>
+<subfield code="g">0</subfield>
+<subfield code="j">MAPLC</subfield>
+<subfield code="k">0</subfield>
+<subfield code="p">1</subfield>
+<subfield code="q">Harvard Map Collection</subfield>
+</datafield>
+<datafield ind1=" " ind2=" " tag="AVA">
+<subfield code="0">990138742350203941</subfield>
+<subfield code="8">222172557030003941</subfield>
+<subfield code="a">01HVD_INST</subfield>
+<subfield code="b">NET</subfield>
+<subfield code="c">GEN</subfield>
+<subfield code="e">check_holdings</subfield>
+<subfield code="j">GEN</subfield>
+<subfield code="k">#</subfield>
+<subfield code="p">2</subfield>
+<subfield code="q">Networked Resource (NET)</subfield>
+</datafield>
+</marc:record>
