@@ -4,7 +4,7 @@
 <marc:leader>00000nem a22     Ii 4500</marc:leader>
 <controlfield tag="001">990138742350203941</controlfield>
 <controlfield tag="005">20140916143145.0</controlfield>
-<controlfield tag="008">131218m17471751ne d     |a||  |1|  fre d</controlfield>
+<controlfield tag="008">131218m17471751ne d     |a||  |1| fre d</controlfield>
 <datafield ind1="0" ind2=" " tag="034">
 <subfield code="a">a</subfield>
     <subfield code="b">55555</subfield>

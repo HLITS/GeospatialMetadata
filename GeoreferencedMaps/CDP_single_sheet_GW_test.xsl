@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
  <xsl:stylesheet version="1.0" xmlns:marc="http://www.loc.gov/MARC21/slim"  xmlns:xsl="http://www.w3.org/1999/XSL/Transform" exclude-result-prefixes="marc">
-    <xsl:import href="MARC21slimUtils.xsl"/>
+    <xsl:import href="MARC_language_codes.xsl" />
+     <xsl:import href="MARC21slimUtils.xsl"/>
      
-     <!-- QUESTION : Is this the correct way to assert the doctype in the header?
-     GW: Yes, it looks OK to me, assuming the 'doctype-system' attribute is accurate. 
-     -->
      <xsl:output method="xml" encoding="UTF-8" indent="yes" doctype-system="http://www.fgdc.gov/metadata/fgdc-std-001-1998.dtd"/>
-     
+         
      <!-- ENHANCE - DATETYPE LOGIC and DATES OUTPUT / 
             -add logic for codes: i, k, p, r, t. n, c, d, u
             -add logic for converting uu and null values 
@@ -385,499 +383,35 @@
         Test - G5834_A425_1739_A6 prints 'Map in French. Map in Multiple languages.'
     -->
     <xsl:variable name="primarylanguagecode" select="substring(marc:controlfield[@tag=008],35,3)"></xsl:variable>
-    <xsl:variable name="language">
-        <!-- Use in <abstract> -->
-        <xsl:choose>
-            <!-- set language text -->
-            <xsl:when test="$primarylanguagecode = 'aar' ">Afar</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'abk' ">Abkhaz</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'ace' ">Achinese</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'ach' ">Acoli</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'ada' ">Adangme</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'ady' ">Adygei</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'afa' ">Afroasiatic (Other)</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'afh' ">Afrihili (Artificial language)</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'afr' ">Afrikaans</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'ain' ">Ainu</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'aka' ">Akan</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'akk' ">Akkadian</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'alb' ">Albanian</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'ale' ">Aleut</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'alg' ">Algonquian (Other)</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'alt' ">Altai</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'amh' ">Amharic</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'ang' ">English, Old (ca. 450-1100)</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'anp' ">Angika</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'apa' ">Apache languages</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'ara' ">Arabic</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'arc' ">Aramaic</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'arg' ">Aragonese</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'arm' ">Armenian</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'arn' ">Mapuche</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'arp' ">Arapaho</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'art' ">Artificial (Other)</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'arw' ">Arawak</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'asm' ">Assamese</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'ast' ">Bable</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'ath' ">Athapascan (Other)</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'aus' ">Australian languages</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'ava' ">Avaric</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'ave' ">Avestan</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'awa' ">Awadhi</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'aym' ">Aymara</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'aze' ">Azerbaijani</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'bad' ">Banda languages</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'bai' ">Bamileke languages</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'bak' ">Bashkir</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'bal' ">Baluchi</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'bam' ">Bambara</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'ban' ">Balinese</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'baq' ">Basque</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'bas' ">Basa</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'bat' ">Baltic (Other)</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'bej' ">Beja</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'bel' ">Belarusian</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'bem' ">Bemba</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'ben' ">Bengali</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'ber' ">Berber (Other)</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'bho' ">Bhojpuri</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'bih' ">Bihari (Other)</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'bik' ">Bikol</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'bin' ">Edo</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'bis' ">Bislama</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'bla' ">Siksika</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'bnt' ">Bantu (Other)</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'bos' ">Bosnian</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'bra' ">Braj</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'bre' ">Breton</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'btk' ">Batak</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'bua' ">Buriat</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'bug' ">Bugis</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'bul' ">Bulgarian</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'bur' ">Burmese</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'byn' ">Bilin</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'cad' ">Caddo</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'cai' ">Central American Indian (Other)</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'car' ">Carib</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'cat' ">Catalan</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'cau' ">Caucasian (Other)</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'ceb' ">Cebuano</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'cel' ">Celtic (Other)</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'cha' ">Chamorro</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'chb' ">Chibcha</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'che' ">Chechen</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'chg' ">Chagatai</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'chi' ">Chinese</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'chk' ">Chuukese</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'chm' ">Mari</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'chn' ">Chinook jargon</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'cho' ">Choctaw</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'chp' ">Chipewyan</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'chr' ">Cherokee</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'chu' ">Church Slavic</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'chv' ">Chuvash</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'chy' ">Cheyenne</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'cmc' ">Chamic languages</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'cnr' ">Montenegrin</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'cop' ">Coptic</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'cor' ">Cornish</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'cos' ">Corsican</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'cpe' ">Creoles and Pidgins, English-based (Other)</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'cpf' ">Creoles and Pidgins, French-based (Other)</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'cpp' ">Creoles and Pidgins, Portuguese-based (Other)</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'cre' ">Cree</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'crh' ">Crimean Tatar</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'crp' ">Creoles and Pidgins (Other)</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'csb' ">Kashubian</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'cus' ">Cushitic (Other)</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'cze' ">Czech</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'dak' ">Dakota</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'dan' ">Danish</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'dar' ">Dargwa</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'day' ">Dayak</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'del' ">Delaware</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'den' ">Slavey</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'dgr' ">Dogrib</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'din' ">Dinka</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'div' ">Divehi</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'doi' ">Dogri</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'dra' ">Dravidian (Other)</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'dsb' ">Lower Sorbian</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'dua' ">Duala</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'dum' ">Dutch, Middle (ca. 1050-1350)</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'dut' ">Dutch</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'dyu' ">Dyula</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'dzo' ">Dzongkha</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'efi' ">Efik</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'egy' ">Egyptian</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'eka' ">Ekajuk</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'elx' ">Elamite</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'eng' ">English</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'enm' ">English, Middle (1100-1500)</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'epo' ">Esperanto</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'est' ">Estonian</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'ewe' ">Ewe</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'ewo' ">Ewondo</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'fan' ">Fang</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'fao' ">Faroese</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'fat' ">Fanti</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'fij' ">Fijian</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'fil' ">Filipino</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'fin' ">Finnish</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'fiu' ">Finno-Ugrian (Other)</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'fon' ">Fon</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'fre' ">French</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'frm' ">French, Middle (ca. 1300-1600)</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'fro' ">French, Old (ca. 842-1300)</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'frr' ">North Frisian</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'frs' ">East Frisian</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'fry' ">Frisian</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'ful' ">Fula</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'fur' ">Friulian</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'gaa' ">Gã</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'gay' ">Gayo</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'gba' ">Gbaya</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'gem' ">Germanic (Other)</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'geo' ">Georgian</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'ger' ">German</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'gez' ">Ethiopic</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'gil' ">Gilbertese</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'gla' ">Scottish Gaelic</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'gle' ">Irish</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'glg' ">Galician</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'glv' ">Manx</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'gmh' ">German, Middle High (ca. 1050-1500)</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'goh' ">German, Old High (ca. 750-1050)</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'gon' ">Gondi</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'gor' ">Gorontalo</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'got' ">Gothic</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'grb' ">Grebo</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'grc' ">Greek, Ancient (to 1453)</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'gre' ">Greek, Modern (1453-)</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'grn' ">Guarani</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'gsw' ">Swiss German</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'guj' ">Gujarati</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'gwi' ">Gwich'in</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'hai' ">Haida</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'hat' ">Haitian French Creole</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'hau' ">Hausa</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'haw' ">Hawaiian</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'heb' ">Hebrew</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'her' ">Herero</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'hil' ">Hiligaynon</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'him' ">Western Pahari languages</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'hin' ">Hindi</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'hit' ">Hittite</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'hmn' ">Hmong</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'hmo' ">Hiri Motu</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'hrv' ">Croatian</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'hsb' ">Upper Sorbian</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'hun' ">Hungarian</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'hup' ">Hupa</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'iba' ">Iban</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'ibo' ">Igbo</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'ice' ">Icelandic</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'ido' ">Ido</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'iii' ">Sichuan Yi</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'ijo' ">Ijo</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'iku' ">Inuktitut</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'ile' ">Interlingue</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'ilo' ">Iloko</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'ina' ">Interlingua (International Auxiliary Language Association)</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'inc' ">Indic (Other)</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'ind' ">Indonesian</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'ine' ">Indo-European (Other)</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'inh' ">Ingush</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'ipk' ">Inupiaq</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'ira' ">Iranian (Other)</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'iro' ">Iroquoian (Other)</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'ita' ">Italian</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'jav' ">Javanese</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'jbo' ">Lojban (Artificial language)</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'jpn' ">Japanese</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'jpr' ">Judeo-Persian</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'jrb' ">Judeo-Arabic</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'kaa' ">Kara-Kalpak</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'kab' ">Kabyle</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'kac' ">Kachin</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'kal' ">Kalâtdlisut</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'kam' ">Kamba</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'kan' ">Kannada</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'kar' ">Karen languages</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'kas' ">Kashmiri</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'kau' ">Kanuri</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'kaw' ">Kawi</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'kaz' ">Kazakh</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'kbd' ">Kabardian</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'kha' ">Khasi</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'khi' ">Khoisan (Other)</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'khm' ">Khmer</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'kho' ">Khotanese</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'kik' ">Kikuyu</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'kin' ">Kinyarwanda</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'kir' ">Kyrgyz</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'kmb' ">Kimbundu</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'kok' ">Konkani</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'kom' ">Komi</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'kon' ">Kongo</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'kor' ">Korean</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'kos' ">Kosraean</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'kpe' ">Kpelle</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'krc' ">Karachay-Balkar</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'krl' ">Karelian</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'kro' ">Kru (Other)</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'kru' ">Kurukh</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'kua' ">Kuanyama</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'kum' ">Kumyk</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'kur' ">Kurdish</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'kut' ">Kootenai</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'lad' ">Ladino</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'lah' ">Lahndā</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'lam' ">Lamba (Zambia and Congo)</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'lao' ">Lao</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'lat' ">Latin</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'lav' ">Latvian</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'lez' ">Lezgian</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'lim' ">Limburgish</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'lin' ">Lingala</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'lit' ">Lithuanian</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'lol' ">Mongo-Nkundu</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'loz' ">Lozi</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'ltz' ">Luxembourgish</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'lua' ">Luba-Lulua</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'lub' ">Luba-Katanga</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'lug' ">Ganda</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'lui' ">Luiseño</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'lun' ">Lunda</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'luo' ">Luo (Kenya and Tanzania)</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'lus' ">Lushai</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'mac' ">Macedonian</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'mad' ">Madurese</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'mag' ">Magahi</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'mah' ">Marshallese</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'mai' ">Maithili</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'mak' ">Makasar</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'mal' ">Malayalam</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'man' ">Mandingo</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'mao' ">Maori</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'map' ">Austronesian (Other)</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'mar' ">Marathi</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'mas' ">Maasai</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'may' ">Malay</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'mdf' ">Moksha</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'mdr' ">Mandar</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'men' ">Mende</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'mga' ">Irish, Middle (ca. 1100-1550)</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'mic' ">Micmac</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'min' ">Minangkabau</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'mis' ">Miscellaneous languages</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'mkh' ">Mon-Khmer (Other)</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'mlg' ">Malagasy</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'mlt' ">Maltese</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'mnc' ">Manchu</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'mni' ">Manipuri</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'mno' ">Manobo languages</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'moh' ">Mohawk</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'mon' ">Mongolian</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'mos' ">Mooré</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'mul' ">Multiple languages</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'mun' ">Munda (Other)</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'mus' ">Creek</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'mwl' ">Mirandese</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'mwr' ">Marwari</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'myn' ">Mayan languages</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'myv' ">Erzya</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'nah' ">Nahuatl</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'nai' ">North American Indian (Other)</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'nap' ">Neapolitan Italian</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'nau' ">Nauru</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'nav' ">Navajo</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'nbl' ">Ndebele (South Africa)</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'nde' ">Ndebele (Zimbabwe)</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'ndo' ">Ndonga</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'nds' ">Low German</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'nep' ">Nepali</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'new' ">Newari</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'nia' ">Nias</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'nic' ">Niger-Kordofanian (Other)</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'niu' ">Niuean</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'nno' ">Norwegian (Nynorsk)</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'nob' ">Norwegian (Bokmål)</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'nog' ">Nogai</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'non' ">Old Norse</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'nor' ">Norwegian</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'nqo' ">N'Ko</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'nso' ">Northern Sotho</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'nub' ">Nubian languages</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'nwc' ">Newari, Old</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'nya' ">Nyanja</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'nym' ">Nyamwezi</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'nyn' ">Nyankole</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'nyo' ">Nyoro</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'nzi' ">Nzima</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'oci' ">Occitan (post-1500)</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'oji' ">Ojibwa</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'ori' ">Oriya</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'orm' ">Oromo</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'osa' ">Osage</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'oss' ">Ossetic</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'ota' ">Turkish, Ottoman</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'oto' ">Otomian languages</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'paa' ">Papuan (Other)</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'pag' ">Pangasinan</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'pal' ">Pahlavi</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'pam' ">Pampanga</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'pan' ">Panjabi</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'pap' ">Papiamento</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'pau' ">Palauan</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'peo' ">Old Persian (ca. 600-400 B.C.)</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'per' ">Persian</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'phi' ">Philippine (Other)</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'phn' ">Phoenician</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'pli' ">Pali</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'pol' ">Polish</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'pon' ">Pohnpeian</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'por' ">Portuguese</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'pra' ">Prakrit languages</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'pro' ">Provençal (to 1500)</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'pus' ">Pushto</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'que' ">Quechua</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'raj' ">Rajasthani</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'rap' ">Rapanui</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'rar' ">Rarotongan</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'roa' ">Romance (Other)</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'roh' ">Raeto-Romance</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'rom' ">Romani</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'rum' ">Romanian</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'run' ">Rundi</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'rup' ">Aromanian</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'rus' ">Russian</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'sad' ">Sandawe</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'sag' ">Sango (Ubangi Creole)</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'sah' ">Yakut</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'sai' ">South American Indian (Other)</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'sal' ">Salishan languages</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'sam' ">Samaritan Aramaic</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'san' ">Sanskrit</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'sas' ">Sasak</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'sat' ">Santali</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'scn' ">Sicilian Italian</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'sco' ">Scots</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'sel' ">Selkup</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'sem' ">Semitic (Other)</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'sga' ">Irish, Old (to 1100)</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'sgn' ">Sign languages</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'shn' ">Shan</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'sid' ">Sidamo</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'sin' ">Sinhalese</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'sio' ">Siouan (Other)</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'sit' ">Sino-Tibetan (Other)</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'sla' ">Slavic (Other)</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'slo' ">Slovak</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'slv' ">Slovenian</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'sma' ">Southern Sami</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'sme' ">Northern Sami</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'smi' ">Sami</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'smj' ">Lule Sami</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'smn' ">Inari Sami</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'smo' ">Samoan</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'sms' ">Skolt Sami</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'sna' ">Shona</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'snd' ">Sindhi</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'snk' ">Soninke</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'sog' ">Sogdian</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'som' ">Somali</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'son' ">Songhai</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'sot' ">Sotho</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'spa' ">Spanish</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'srd' ">Sardinian</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'srn' ">Sranan</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'srp' ">Serbian</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'srr' ">Serer</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'ssa' ">Nilo-Saharan (Other)</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'ssw' ">Swazi</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'suk' ">Sukuma</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'sun' ">Sundanese</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'sus' ">Susu</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'sux' ">Sumerian</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'swa' ">Swahili</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'swe' ">Swedish</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'syc' ">Syriac</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'syr' ">Syriac, Modern</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'tah' ">Tahitian</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'tai' ">Tai (Other)</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'tam' ">Tamil</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'tat' ">Tatar</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'tel' ">Telugu</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'tem' ">Temne</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'ter' ">Terena</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'tet' ">Tetum</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'tgk' ">Tajik</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'tgl' ">Tagalog</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'tha' ">Thai</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'tib' ">Tibetan</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'tig' ">Tigré</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'tir' ">Tigrinya</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'tiv' ">Tiv</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'tkl' ">Tokelauan</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'tlh' ">Klingon (Artificial language)</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'tli' ">Tlingit</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'tmh' ">Tamashek</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'tog' ">Tonga (Nyasa)</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'ton' ">Tongan</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'tpi' ">Tok Pisin</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'tsi' ">Tsimshian</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'tsn' ">Tswana</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'tso' ">Tsonga</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'tuk' ">Turkmen</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'tum' ">Tumbuka</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'tup' ">Tupi languages</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'tur' ">Turkish</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'tut' ">Altaic (Other)</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'tvl' ">Tuvaluan</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'twi' ">Twi</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'tyv' ">Tuvinian</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'udm' ">Udmurt</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'uga' ">Ugaritic</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'uig' ">Uighur</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'ukr' ">Ukrainian</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'umb' ">Umbundu</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'und' ">Undetermined</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'urd' ">Urdu</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'uzb' ">Uzbek</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'vai' ">Vai</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'ven' ">Venda</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'vie' ">Vietnamese</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'vol' ">Volapük</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'vot' ">Votic</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'wak' ">Wakashan languages</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'wal' ">Wolayta</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'war' ">Waray</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'was' ">Washoe</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'wel' ">Welsh</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'wen' ">Sorbian (Other)</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'wln' ">Walloon</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'wol' ">Wolof</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'xal' ">Oirat</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'xho' ">Xhosa</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'yao' ">Yao (Africa)</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'yap' ">Yapese</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'yid' ">Yiddish</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'yor' ">Yoruba</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'ypk' ">Yupik languages</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'zap' ">Zapotec</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'zbl' ">Blissymbolics</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'zen' ">Zenaga</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'zha' ">Zhuang</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'znd' ">Zande languages</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'zul' ">Zulu</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'zun' ">Zuni</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'zxx' "></xsl:when>
-            <xsl:when test="$primarylanguagecode = 'zza' ">Zaza</xsl:when>
-            <xsl:when test="$primarylanguagecode = '' or not($primarylanguagecode)"></xsl:when>
-        </xsl:choose>
-    </xsl:variable>
     
+    <xsl:variable name="language">
+        <xsl:call-template name="MARC_language_codes">
+            <xsl:with-param name="primarylanguagecode" select = "$primarylanguagecode" />
+        </xsl:call-template>
+    </xsl:variable>
+        <!-- Use in <abstract> -->
+        <!--<xsl:choose>
+            <!-\- set language text -\->
+            <xsl:when test="$primarylanguagecode = 'ara'">Arabic</xsl:when>
+            <xsl:when test="$primarylanguagecode = 'chi'">Chinese</xsl:when>
+            <xsl:when test="$primarylanguagecode = 'cze'">Czech</xsl:when>
+            <xsl:when test="$primarylanguagecode = 'dut'">Dutch</xsl:when>
+            <xsl:when test="$primarylanguagecode = 'eng'">English</xsl:when>
+            <xsl:when test="$primarylanguagecode = 'fre'">French</xsl:when>
+            <xsl:when test="$primarylanguagecode = 'ger'">German</xsl:when>
+            <xsl:when test="$primarylanguagecode = 'gre'">Greek</xsl:when>
+            <xsl:when test="$primarylanguagecode = 'heb'">Hebrew</xsl:when>
+            <xsl:when test="$primarylanguagecode = 'hun'">Hungarian</xsl:when>
+            <xsl:when test="$primarylanguagecode = 'ita'">Italian</xsl:when>
+            <xsl:when test="$primarylanguagecode = 'jpn'">Japanese</xsl:when>
+            <xsl:when test="$primarylanguagecode = 'lat'">Latin</xsl:when> 
+            <xsl:when test="$primarylanguagecode = 'per'">Persian</xsl:when>
+            <xsl:when test="$primarylanguagecode = 'por'">Portuguese</xsl:when>
+            <xsl:when test="$primarylanguagecode = 'rus'">Russian</xsl:when>
+            <xsl:when test="$primarylanguagecode = 'spa'">Spanish</xsl:when>       
+        </xsl:choose>
+    </xsl:variable>-->
+ 
     <xsl:variable name="HOLLISPermlink" select="marc:controlfield[@tag=001]"></xsl:variable>
     <xsl:variable name="file1" select="document('rLayerID_export.xml')"/>
     
@@ -914,7 +448,9 @@
             </citation>
            
             <descript>
-               <language><xsl:value-of select="$primarylanguagecode"/></language>
+                <language><xsl:value-of select="$language"/></language>
+                <primarlylanguagecode><xsl:value-of select="$primarylanguagecode"/></primarlylanguagecode>
+               
                 <abstract>This layer is a georeferenced raster image of the historic paper map entitled: <xsl:value-of select="$titleAandB"/>. It was published by: <xsl:value-of select="$publisher"/><xsl:value-of select="$pubdatestring"/>. <xsl:value-of select="$scale"/>. <xsl:if test="$language != ''"><xsl:value-of select="concat(' Map in ',$language,'.')"/></xsl:if> <xsl:if test="marc:datafield[@tag=041]/marc:subfield[@code='a'] != ''"><xsl:value-of select="concat(' ','Map in multiple languages.')"/></xsl:if>
                 The image inside the map neatline is georeferenced to the surface of the earth and fit to the rProjection (EPSG: xxx_EPSG_xxx) coordinate system. All map features and collar and inset information are shown as part of the raster image, including any inset maps, profiles, statistical tables, directories, text, illustrations, index maps, legends, or other information associated with the principal map.                 
                 
@@ -954,53 +490,7 @@
                 </timeinfo>
             </timeperd>
            <!-- End of GW new structure -->
-            
-            <!-- old date section
-            <xsl:if test="$datetype = 's' or  $datetype = 'e' or ">
-                <timeperd><datetypetag><xsl:value-of select="$datetype"/></datetypetag><date2unclear><xsl:value-of select="$date2_unclear"/></date2unclear>
-                    <timeinfo>
-                        <sngdate>
-                            <caldate><xsl:value-of select="$date1"/></caldate>
-                        </sngdate>
-                    </timeinfo>
-                    <current><xsl:value-of select="$datecurrentnesstext"/></current>
-                </timeperd>
-            </xsl:if>
-            <xsl:if test="$datetype = 'e'">
-                <timeperd>
-                    <timeinfo>
-                        <sngdate>
-                            <caldate><xsl:value-of select="$date1"/><xsl:value-of select="$date2"/></caldate>
-                        </sngdate>
-                    </timeinfo>
-                    <current><xsl:value-of select="$datecurrentnesstext"/></current>
-                </timeperd>
-            </xsl:if>
-            <xsl:if test="$datetype = 'm' or $datetype = 'q' and $date2_unclear = 'FALSE'">
-                <timeperd><datetypetag><xsl:value-of select="$datetype"/></datetypetag><date2unclear><xsl:value-of select="$date2_unclear"/></date2unclear>
-                    <timeinfo>
-                        <rngdates>
-                            <begdate><xsl:value-of select="$date1"/></begdate>
-                            <enddate><xsl:value-of select="$date2"/></enddate>
-                        </rngdates>
-                    </timeinfo>
-                    <current><xsl:value-of select="$datecurrentnesstext"/></current>
-                </timeperd>
-            </xsl:if>
-            <xsl:if test="$datetype = 'q'">
-                <timeperd>
-                    <timeinfo>
-                        <rngdates>
-                            <begdate><xsl:value-of select="$date1"/></begdate>
-                            <enddate><xsl:value-of select="$date2"/></enddate>
-                        </rngdates>
-                    </timeinfo>
-                    <current><xsl:value-of select="$datecurrentnesstext"/></current>
-                </timeperd>
-            
-            </xsl:if>
-            End of old date section -->
-            
+               
             <status>
                 <progress>Complete</progress>
                 <update>None planned</update>
@@ -1312,7 +802,7 @@
         <metstdv>FGDC-STD-001-1998</metstdv>
         <mettc>local time</mettc>
     </metainfo>
-    </xsl:template>
+</xsl:template>
 </xsl:stylesheet>
 <!--http://creativecommons.org/licenses/zero/1.0/
 Creative Commons 1.0 Universal
