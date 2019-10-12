@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:record xmlns:marc="http://www.loc.gov/MARC21/slim" xmlns="http://www.loc.gov/MARC21/slim" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:xlink="http://www.w3.org/TR/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/MARC21/slim   http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+<marc:leader>00000nem a2200289Ia 4500</marc:leader>
+<controlfield tag="001">990130668860203941</controlfield>
+<controlfield tag="005">20160224163336.0</controlfield>
+<controlfield tag="008">020528q168u    gw i      a     0   lat d</controlfield>
+<datafield ind1="1" ind2=" " tag="034">
+<subfield code="a">a</subfield>
+<subfield code="b">10000000</subfield>
+</datafield>
+<datafield ind1=" " ind2=" " tag="035">
+<subfield code="a">(MH)013066886HVD01-Aleph</subfield>
+</datafield>
+<datafield ind1=" " ind2=" " tag="035">
+<subfield code="a">(OCoLC)773347103</subfield>
+</datafield>
+<datafield ind1=" " ind2=" " tag="052">
+<subfield code="a">5700</subfield>
+</datafield>
+<datafield ind1=" " ind2=" " tag="052">
+<subfield code="a">8220</subfield>
+</datafield>
+<datafield ind1=" " ind2=" " tag="090">
+<subfield code="a">G5700 1680</subfield>
+<subfield code="b">.S3</subfield>
+</datafield>
+<datafield ind1="1" ind2=" " tag="100">
+<subfield code="a">Sanson, Nicolas,</subfield>
+<subfield code="d">1600-1667.</subfield>
+</datafield>
+<datafield ind1="1" ind2="0" tag="245">
+<subfield code="a">Europa in suas partes principales divisa :</subfield>
+<subfield code="b">ut sunt: Insulae Britannicae, Scandinavia, Moscovia, Germania, Gallia, Polonia, Hispania,, Italia, Hungaria, et Turcia in Europa, cum adiacentibus regnis, statibus et regionibus /</subfield>
+<subfield code="c">repraesentata per Sr. Sansonium, Ordinarium Regis Galliae Geographum ; Sigmund Gabriel Hipschman, sculpsit.</subfield>
+</datafield>
+<datafield ind1=" " ind2=" " tag="255">
+<subfield code="a">Scale [ca. 1:10,000,000]</subfield>
+</datafield>
+<datafield ind1=" " ind2=" " tag="260">
+<subfield code="a">[Nuremberg] :</subfield>
+<subfield code="b">Johannes Hoffmannus,</subfield>
+<subfield code="c">[1668-]</subfield>
+</datafield>
+<datafield ind1=" " ind2=" " tag="300">
+<subfield code="a">1 map ;</subfield>
+<subfield code="c">52 x 85 cm.</subfield>
+</datafield>
+<datafield ind1=" " ind2=" " tag="500">
+<subfield code="a">Prime meridian Ferro.</subfield>
+</datafield>
+<datafield ind1=" " ind2=" " tag="500">
+<subfield code="a">Relief shown pictorially.</subfield>
+</datafield>
+<datafield ind1=" " ind2=" " tag="500">
+<subfield code="a">Dedication: ...Maximiliano Gandolfo, comitibus de Küenburg...".</subfield>
+</datafield>
+<datafield ind1=" " ind2=" " tag="530">
+<subfield code="a">Also available online.</subfield>
+</datafield>
+<datafield ind1=" " ind2="0" tag="651">
+<subfield code="a">Africa, North</subfield>
+<subfield code="x">Maps</subfield>
+<subfield code="v">Early works to 1800.</subfield>
+</datafield>
+<datafield ind1=" " ind2="0" tag="651">
+<subfield code="a">Europe</subfield>
+<subfield code="v">Maps</subfield>
+<subfield code="v">Early works to 1800.</subfield>
+</datafield>
+<datafield ind1=" " ind2="7" tag="655">
+<subfield code="a">Maps.</subfield>
+<subfield code="2">lcgft.</subfield>
+</datafield>
+<datafield ind1=" " ind2="7" tag="655">
+<subfield code="a">Early maps.</subfield>
+<subfield code="2">lcgft.</subfield>
+</datafield>
+<datafield ind1="1" ind2=" " tag="700">
+<subfield code="a">Hipschmann, Sigmund Gabriel,</subfield>
+<subfield code="d">1639-</subfield>
+</datafield>
+<datafield ind1="1" ind2=" " tag="700">
+<subfield code="a">Hoffmann, Johannes,</subfield>
+<subfield code="d">1629-1698.</subfield>
+</datafield>
+<datafield ind1=" " ind2="0" tag="830">
+<subfield code="a">Harvard Map Collection digital maps.</subfield>
+<subfield code="p">Europe.</subfield>
+<subfield code="5">net</subfield>
+</datafield>
+<datafield ind1=" " ind2="0" tag="830">
+<subfield code="a">Harvard Map Collection digital maps.</subfield>
+<subfield code="p">Africa, North.</subfield>
+<subfield code="5">net</subfield>
+</datafield>
+<datafield ind1=" " ind2=" " tag="900">
+<subfield code="a">013066886</subfield>
+</datafield>
+<datafield ind1=" " ind2=" " tag="998">
+<subfield code="a">NO-OVERLAY</subfield>
+</datafield>
+<datafield ind1=" " ind2=" " tag="AVA">
+<subfield code="0">990130668860203941</subfield>
+<subfield code="8">222156280040003941</subfield>
+<subfield code="a">01HVD_INST</subfield>
+<subfield code="b">MAP</subfield>
+<subfield code="c">MAP-LC</subfield>
+<subfield code="d">G5700 1680 .S3</subfield>
+<subfield code="e">available</subfield>
+<subfield code="f">1</subfield>
+<subfield code="g">0</subfield>
+<subfield code="j">MAPLC</subfield>
+<subfield code="k">0</subfield>
+<subfield code="p">1</subfield>
+<subfield code="q">Harvard Map Collection</subfield>
+</datafield>
+<datafield ind1=" " ind2=" " tag="AVA">
+<subfield code="0">990130668860203941</subfield>
+<subfield code="8">222156279990003941</subfield>
+<subfield code="a">01HVD_INST</subfield>
+<subfield code="b">NET</subfield>
+<subfield code="c">GEN</subfield>
+<subfield code="e">check_holdings</subfield>
+<subfield code="j">GEN</subfield>
+<subfield code="k">#</subfield>
+<subfield code="p">2</subfield>
+<subfield code="q">Networked Resource (NET)</subfield>
+</datafield>
+</marc:record>

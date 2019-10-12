@@ -170,14 +170,30 @@
     <!-- identify datetype MARC code -->
     <xsl:variable name="datetype" select="substring(marc:controlfield[@tag=008],7,1)"></xsl:variable>
     
-    <!-- set date1 pubdate -->
-     <xsl:variable name="date1">
+    <!-- set date1 pubdate; replace u's with 0's  -->
+     <xsl:variable name="date1a">
                 <xsl:value-of select="substring(marc:controlfield[@tag=008],8,4)"/>
      </xsl:variable>
+    <xsl:variable name = "date1">
+        <xsl:value-of select="translate($date1a, 'u','0')"/>
+    </xsl:variable>
     
-    <!-- set date2 pubdate -->
-    <xsl:variable name="date2">
+    <!-- set date2 pubdate; replace u's with 9's -->
+    <xsl:variable name="date2a">
                 <xsl:value-of select="substring(marc:controlfield[@tag=008],12,4)"/>
+    </xsl:variable>
+    
+    <xsl:variable name = "date2">
+        <xsl:value-of select="translate($date2a, 'u','9')"/>
+    </xsl:variable>
+    
+    <xsl:variable name = "date2_valid">
+        <xsl:choose>
+            <xsl:when test="starts-with($date2, ' ') or starts-with($date2, '9')">
+                <xsl:value-of select = "false"></xsl:value-of>
+            </xsl:when>
+            <xsl:otherwise><xsl:value-of select="true"/></xsl:otherwise>
+        </xsl:choose>
     </xsl:variable>
     
     <!-- set approximate date indicator-->
@@ -246,15 +262,11 @@
                 <xsl:value-of select="$date1"/>
             </xsl:when>
             <!-- set date range -->
-            <xsl:when test="$datetype = 'm'">
+            <xsl:when test="$datetype = 'm' or $datetype = 'q' and $date2_valid = 'true'">
                 <xsl:value-of select="concat($date1,'-',$date2)"/>
             </xsl:when>
-            <xsl:when test="$datetype = 'q'">
-                <xsl:value-of select="concat($date1,'-',$date2)"/>
-            </xsl:when>
-            
-            <!-- NOT DONE set default -->
-            
+            <!-- DEFAULT -->
+            <xsl:otherwise><xsl:value-of select="concat('[',$date1,']')"/></xsl:otherwise>            
         </xsl:choose>
     </xsl:variable>
     
@@ -274,15 +286,15 @@
                 <xsl:value-of select="concat(' in ',$date1)"/>
             </xsl:when>
             <!-- set date range -->
-            <xsl:when test="$datetype = 'm'">
-                <xsl:value-of select="concat(' between ', $date1,' and ',$date2)"/>
-            </xsl:when>
-            <xsl:when test="$datetype = 'q'">
+            <xsl:when test="$datetype = 'm' or $datetype = 'q' and $date2_valid = 'true'">
                 <xsl:value-of select="concat(' between ', $date1,' and ',$date2)"/>
             </xsl:when>
             
-            <!-- NOT DONE set default -->
-            
+            <!-- Default --> 
+            <xsl:otherwise>
+                <xsl:value-of select="concat(' in about ',$date1)"/>
+            </xsl:otherwise>
+           
         </xsl:choose>
     </xsl:variable>
     
@@ -370,30 +382,34 @@
         ENHANCE - refine/test multiple language contigency in abstract - 
         Test - G5834_A425_1739_A6 prints 'Map in French. Map in Multiple languages.'
     -->
-    <xsl:variable name="primarylanguagecode" select="substring(marc:controlfield[@tag=008],36,3)"></xsl:variable>
+    <!-- Get to language code from the end of the string; also taking separate 'substring variable from 
+         the text node of 008. Is it more reliable? -->  
+    <xsl:variable name="textOf008" select = "marc:controlfield[@tag=008]/text()"></xsl:variable>
+    <xsl:variable name="subStrFromEnd" select = "string-length($textOf008)-4"></xsl:variable>
+    <xsl:variable name="primarylanguagecode" select="substring($textOf008,$subStrFromEnd,3)"></xsl:variable>
+        
     <xsl:variable name="language">
         <!-- Use in <abstract> -->
-        <xsl:choose>
-            <!-- set language text -->
-            <xsl:when test="$primarylanguagecode = 'ara'">Arabic</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'chi'">Chinese</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'cze'">Czech</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'dut'">Dutch</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'eng'">English</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'fre'">French</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'ger'">German</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'gre'">Greek</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'heb'">Hebrew</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'hun'">Hungarian</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'ita'">Italian</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'jpn'">Japanese</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'lat'">Latin</xsl:when> 
-            <xsl:when test="$primarylanguagecode = 'per'">Persian</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'por'">Portuguese</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'rus'">Russian</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'spa'">Spanish</xsl:when>       
-        </xsl:choose>
+        <xsl:value-of select="document('MarcLang.xml')/languages/language[@code=$primarylanguagecode]/@name"/>
     </xsl:variable>
+    
+    <!-- Display for variable values (debugging)-->
+    <debug_text008><xsl:value-of select = "$textOf008"></xsl:value-of></debug_text008>  
+    <debug_primaryLanguageCode><xsl:value-of select="$primarylanguagecode"/></debug_primaryLanguageCode>
+    <debug_correspondingLanguageName><xsl:value-of select="$language"/></debug_correspondingLanguageName>
+    <debug_date1><xsl:value-of select = "$date1"/></debug_date1>
+    <debug_date2><xsl:value-of select="$date2"/></debug_date2>
+    
+    <debug_date_2_valid>
+        <xsl:choose>
+            <xsl:when test="$date2_valid = 'true'">
+                VALID
+            </xsl:when>
+            <xsl:otherwise>INVALID</xsl:otherwise>
+        </xsl:choose>
+    </debug_date_2_valid>
+    
+    <!-- end of debugging -->
     
     <xsl:variable name="HOLLISPermlink" select="marc:controlfield[@tag=001]"></xsl:variable>
     <xsl:variable name="file1" select="document('rLayerID_export.xml')"/>
@@ -434,7 +450,7 @@
            
             <descript>
                
-                <abstract>This layer is a georeferenced raster image of the historic paper map entitled: <xsl:value-of select="$titleAandB"/>. It was published by: <xsl:value-of select="$publisher"/><xsl:value-of select="$pubdatestring"/>. <xsl:value-of select="$scale"/>. <xsl:if test="$language != ''"><xsl:value-of select="concat(' Map in ',$language,'.')"/></xsl:if> <xsl:if test="marc:datafield[@tag=041]/marc:subfield[@code='a'] != ''"><xsl:value-of select="concat(' ','Map in multiple languages.')"/></xsl:if>
+                <abstract>This layer is a georeferenced raster image of the historic paper map entitled: <xsl:value-of select="$titleAandB"/>. It was published by <xsl:value-of select="$publisher"/><xsl:value-of select="$pubdatestring"/>. <xsl:value-of select="$scale"/>. <xsl:if test="$language != ''"><xsl:value-of select="concat(' Map in ',$language,'.')"/></xsl:if> <xsl:if test="marc:datafield[@tag=041]/marc:subfield[@code='a'] != ''"><xsl:value-of select="concat(' ','Map in multiple languages.')"/></xsl:if>
                     
                     The image inside the map neatline is georeferenced to the surface of the earth and fit to the rProjection (EPSG: xxx_EPSG_xxx) coordinate system. All map features and collar and inset information are shown as part of the raster image, including any inset maps, profiles, statistical tables, directories, text, illustrations, index maps, legends, or other information associated with the principal map. 
                     
