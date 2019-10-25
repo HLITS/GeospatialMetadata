@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
- <xsl:stylesheet version="1.0" xmlns:marc="http://www.loc.gov/MARC21/slim"  xmlns:xsl="http://www.w3.org/1999/XSL/Transform" exclude-result-prefixes="marc">
-    <xsl:import href="MARC_language_codes.xsl" />
+ <xsl:stylesheet version="2.0" xmlns:marc="http://www.loc.gov/MARC21/slim"  xmlns:xsl="http://www.w3.org/1999/XSL/Transform" exclude-result-prefixes="marc">
      <xsl:import href="MARC21slimUtils.xsl"/>
      
      <xsl:output method="xml" encoding="UTF-8" indent="yes" doctype-system="http://www.fgdc.gov/metadata/fgdc-std-001-1998.dtd"/>
@@ -134,7 +133,7 @@
  </xsl:template>
 
 <xsl:template match="marc:record">
-    <xsl:variable name="titleA" select="marc:datafield[@tag=245]/marc:subfield[@code='a']"></xsl:variable>
+    <xsl:variable name="titleA" select="marc:datafield[@tag='245']/marc:subfield[@code='a']"></xsl:variable>
     <xsl:variable name="titleAChop">
         <xsl:call-template name="chopPunctuationBack">
             <xsl:with-param name="chopString">
@@ -142,7 +141,7 @@
             </xsl:with-param>
         </xsl:call-template>
     </xsl:variable>
-    <xsl:variable name="titleB" select="marc:datafield[@tag=245]/marc:subfield[@code='b']"></xsl:variable>
+    <xsl:variable name="titleB" select="marc:datafield[@tag='245']/marc:subfield[@code='b']"></xsl:variable>
     <xsl:variable name="titleBChop">
         <xsl:call-template name="chopPunctuationBack">
             <xsl:with-param name="chopString">
@@ -150,8 +149,8 @@
             </xsl:with-param>
         </xsl:call-template>
     </xsl:variable>
-    <xsl:variable name="scale" select="marc:datafield[@tag=255]/marc:subfield[@code='a']"></xsl:variable>
-    <xsl:variable name="scaleDenominator" select="marc:datafield[@tag=034]/marc:subfield[@code='b']"></xsl:variable>
+    <xsl:variable name="scale" select="marc:datafield[@tag='255']/marc:subfield[@code='a']"></xsl:variable>
+    <xsl:variable name="scaleDenominator" select="marc:datafield[@tag='034']/marc:subfield[@code='b']"></xsl:variable>
     <xsl:variable name="scaleDenominatorText">
         <xsl:choose>
             <xsl:when test="$scaleDenominator != ''"><xsl:value-of select="$scaleDenominator"/></xsl:when>
@@ -168,18 +167,38 @@
     </xsl:variable>
         
     <!-- identify datetype MARC code -->
-    <xsl:variable name="datetype" select="substring(marc:controlfield[@tag=008],7,1)"></xsl:variable>
+    <xsl:variable name="datetype" select="substring(marc:controlfield[@tag='008'],7,1)"></xsl:variable>
     
     <!-- set date1 pubdate -->
      <xsl:variable name="date1">
-                <xsl:value-of select="substring(marc:controlfield[@tag=008],8,4)"/>
+                <xsl:value-of select="substring(marc:controlfield[@tag='008'],8,4)"/>
      </xsl:variable>
     
     <!-- set date2 pubdate -->
     <xsl:variable name="date2">
-                <xsl:value-of select="substring(marc:controlfield[@tag=008],12,4)"/>
+                <xsl:value-of select="substring(marc:controlfield[@tag='008'],12,4)"/>
+    </xsl:variable>
+    <!--additional date variables for testing purposes-->
+    <xsl:variable name="date3">
+        <xsl:value-of select= "'168u'"/>
+    </xsl:variable>
+    <xsl:variable name="date4">
+        <xsl:value-of select= "'169u'"/>
+    </xsl:variable>
+    <xsl:variable name="date5">
+        <xsl:value-of select= "'16uu'"/>
+    </xsl:variable>
+    <xsl:variable name="date6">
+        <xsl:value-of select= "'16uu'"/>
     </xsl:variable>
     
+    <xsl:variable name="date3_string">
+        <xsl:value-of select="translate($date3, 'u', '0')"/>
+    </xsl:variable> 
+    <xsl:variable name="date4_string">
+        <xsl:value-of select="translate($date4, 'u', '9')"/>
+    </xsl:variable> 
+        
     <!-- set date2_unclear when date2 contains any of u,#,|,\s -->
     <xsl:variable name="date2_unclear">
         <xsl:choose>
@@ -193,11 +212,11 @@
         "date of publication not identified" or "or" or "after" -->
     
     <xsl:variable name="c264text">
-        <xsl:value-of select="marc:datafield[@tag=264][@ind2=1]/marc:subfield[@code='c']"/>
+        <xsl:value-of select="marc:datafield[@tag='264'][@ind2=1]/marc:subfield[@code='c']"/>
     </xsl:variable>
     
     <xsl:variable name="c260text">
-        <xsl:value-of select="marc:datafield[@tag=260]/marc:subfield[@code='c']"/>
+        <xsl:value-of select="marc:datafield[@tag='260']/marc:subfield[@code='c']"/>
     </xsl:variable>
     
     <xsl:variable name="c26Xtext">
@@ -254,12 +273,8 @@
                 <xsl:value-of select="$date1"/>
             </xsl:when>
             <!-- set date range -->
-            <!--
-            <xsl:when test="$datetype = 'm' and $date2_unclear = 'FALSE'">
-                <xsl:value-of select="concat($date1,'-',$date2)"/>
-            </xsl:when>
-            -->
-           <xsl:when test="$datetype = 'q' or $datetype ='m' and $date2_unclear = 'FALSE'">
+           
+           <xsl:when test="$datetype = 'q' or $datetype ='m'">
                 <xsl:value-of select="concat($date1,'-',$date2)"/>
             </xsl:when>
             <!-- If date2_unclear is true and/or other tests above did not apply, use default of just one date value for titlepubdatestring -->
@@ -288,7 +303,7 @@
                 <xsl:value-of select="concat(' between ', $date1,' and ',$date2)"/>
             </xsl:when>
             <xsl:when test="$datetype = 'q' and $date2_unclear ='FALSE'">
-                <xsl:value-of select="concat(' between ', $date1,' and ',$date2, ' (approximate dates)')"/>
+                <xsl:value-of select="concat(' between approximately', $date1,' and ',$date2)"/>
             </xsl:when>
             
             <!-- Set default case to approximate single date -->
@@ -298,7 +313,7 @@
         </xsl:choose>
     </xsl:variable>
  
-    <xsl:variable name="b260" select="marc:datafield[@tag=260]/marc:subfield[@code='b']"></xsl:variable>
+    <xsl:variable name="b260" select="marc:datafield[@tag='260']/marc:subfield[@code='b']"></xsl:variable>
     <xsl:variable name="b260Chop">
         <xsl:call-template name="chopPunctuationBack">
             <xsl:with-param name="chopString">
@@ -306,7 +321,7 @@
             </xsl:with-param>
         </xsl:call-template>
     </xsl:variable>
-    <xsl:variable name="b264" select="marc:datafield[@tag=264][@ind2=1]/marc:subfield[@code='b']"></xsl:variable>
+    <xsl:variable name="b264" select="marc:datafield[@tag='264'][@ind2=1]/marc:subfield[@code='b']"></xsl:variable>
     <xsl:variable name="b264Chop">
         <xsl:call-template name="chopPunctuationBack">
             <xsl:with-param name="chopString">
@@ -314,7 +329,7 @@
             </xsl:with-param>
         </xsl:call-template>
     </xsl:variable>
-    <xsl:variable name="a260" select="marc:datafield[@tag=260]/marc:subfield[@code='a']"></xsl:variable>
+    <xsl:variable name="a260" select="marc:datafield[@tag='260']/marc:subfield[@code='a']"></xsl:variable>
     <xsl:variable name="a260Chop">
         <xsl:call-template name="chopPunctuationFront">
             <xsl:with-param name="chopString">
@@ -322,7 +337,7 @@
             </xsl:with-param>
         </xsl:call-template>
     </xsl:variable>
-    <xsl:variable name="a264" select="marc:datafield[@tag=264][@ind2=1]/marc:subfield[@code='a']"></xsl:variable>
+    <xsl:variable name="a264" select="marc:datafield[@tag='264'][@ind2=1]/marc:subfield[@code='a']"></xsl:variable>
     <xsl:variable name="a264Chop">
         <xsl:call-template name="chopPunctuationFront">
             <xsl:with-param name="chopString">
@@ -382,53 +397,29 @@
         ENHANCE - refine/test multiple language contigency in abstract - 
         Test - G5834_A425_1739_A6 prints 'Map in French. Map in Multiple languages.'
     -->
-    <xsl:variable name="primarylanguagecode" select="substring(marc:controlfield[@tag=008],35,3)"></xsl:variable>
+    <xsl:variable name="primarylanguagecode" select="substring(marc:controlfield[@tag='008'],36,3)"></xsl:variable>
     
     <xsl:variable name="language">
-        <xsl:call-template name="MARC_language_codes">
-            <xsl:with-param name="primarylanguagecode" select = "$primarylanguagecode" />
-        </xsl:call-template>
+        <xsl:value-of select="document('MarcLang.xml')/languages/language[@code=$primarylanguagecode]/@name"/>
     </xsl:variable>
-        <!-- Use in <abstract> -->
-        <!--<xsl:choose>
-            <!-\- set language text -\->
-            <xsl:when test="$primarylanguagecode = 'ara'">Arabic</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'chi'">Chinese</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'cze'">Czech</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'dut'">Dutch</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'eng'">English</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'fre'">French</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'ger'">German</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'gre'">Greek</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'heb'">Hebrew</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'hun'">Hungarian</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'ita'">Italian</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'jpn'">Japanese</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'lat'">Latin</xsl:when> 
-            <xsl:when test="$primarylanguagecode = 'per'">Persian</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'por'">Portuguese</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'rus'">Russian</xsl:when>
-            <xsl:when test="$primarylanguagecode = 'spa'">Spanish</xsl:when>       
-        </xsl:choose>
-    </xsl:variable>-->
  
-    <xsl:variable name="HOLLISPermlink" select="marc:controlfield[@tag=001]"></xsl:variable>
+    <xsl:variable name="HOLLISPermlink" select="marc:controlfield[@tag='001']"></xsl:variable>
     <xsl:variable name="file1" select="document('rLayerID_export.xml')"/>
     
         <idinfo>
             <citation>
                 <citeinfo>
                     <origin>Harvard Map Collection, Harvard Library</origin>
-                    <xsl:for-each select="marc:datafield[@tag=100]">
+                    <xsl:for-each select="marc:datafield[@tag='100']">
                         <xsl:call-template name="createNamePersonal"/>
                     </xsl:for-each>
-                    <xsl:for-each select="marc:datafield[@tag=110] |marc:datafield[@tag=111]">
+                    <xsl:for-each select="marc:datafield[@tag='110'] |marc:datafield[@tag='111']">
                         <xsl:call-template name="createNameCorporate"/>
                     </xsl:for-each>
-                    <xsl:for-each select="marc:datafield[@tag=700]">
+                    <xsl:for-each select="marc:datafield[@tag='700']">
                         <xsl:call-template name="createNamePersonal"/>
                     </xsl:for-each>
-                    <xsl:for-each select="marc:datafield[@tag=710] |marc:datafield[@tag=711]">
+                    <xsl:for-each select="marc:datafield[@tag='710'] |marc:datafield[@tag='711']">
                         <xsl:call-template name="createNameCorporate"/>
                     </xsl:for-each>                
                 
@@ -449,9 +440,9 @@
            
             <descript>
                 <language><xsl:value-of select="$language"/></language>
-                <primarlylanguagecode><xsl:value-of select="$primarylanguagecode"/></primarlylanguagecode>
+                <primarylanguagecode><xsl:value-of select="$primarylanguagecode"/></primarylanguagecode>
                
-                <abstract>This layer is a georeferenced raster image of the historic paper map entitled: <xsl:value-of select="$titleAandB"/>. It was published by: <xsl:value-of select="$publisher"/><xsl:value-of select="$pubdatestring"/>. <xsl:value-of select="$scale"/>. <xsl:if test="$language != ''"><xsl:value-of select="concat(' Map in ',$language,'.')"/></xsl:if> <xsl:if test="marc:datafield[@tag=041]/marc:subfield[@code='a'] != ''"><xsl:value-of select="concat(' ','Map in multiple languages.')"/></xsl:if>
+                <abstract>This layer is a georeferenced raster image of the historic paper map entitled: <xsl:value-of select="$titleAandB"/>. It was published by: <xsl:value-of select="$publisher"/><xsl:value-of select="$pubdatestring"/>. <xsl:value-of select="$scale"/>. <xsl:if test="$language != ''"><xsl:value-of select="concat(' Map in ',$language,'.')"/></xsl:if> <xsl:if test="marc:datafield[@tag='041']/marc:subfield[@code='a'] != ''"><xsl:value-of select="concat(' ','Map in multiple languages.')"/></xsl:if>
                 The image inside the map neatline is georeferenced to the surface of the earth and fit to the rProjection (EPSG: xxx_EPSG_xxx) coordinate system. All map features and collar and inset information are shown as part of the raster image, including any inset maps, profiles, statistical tables, directories, text, illustrations, index maps, legends, or other information associated with the principal map.                 
                 
                 This layer is part of a selection of digitally scanned and georeferenced historic maps from the Harvard Map Collection. These maps typically portray both natural and manmade features. The selection represents a range of geographies, originators, ground condition dates, scales, and map purposes.</abstract>
@@ -465,14 +456,22 @@
             <timeperd>
                 <timeinfo>
                     <!-- Variable display fields for testing purposes -->
-                    <date_type><xsl:value-of select="$datetype"/></date_type>
-                    <date2_value><xsl:value-of select="$date2"/></date2_value>
-                    <date2_unclear_test><xsl:value-of select="$date2_unclear"/></date2_unclear_test>
+                    <var_datetype><xsl:value-of select="$datetype"/></var_datetype>
+                    <var_date1_><xsl:value-of select="$date1"/></var_date1_>
+                    <var_date2><xsl:value-of select="$date2"/></var_date2>
+                    <var_date2_unclear><xsl:value-of select="$date2_unclear"/></var_date2_unclear>
+                    <var_date3><xsl:value-of select="$date3"/></var_date3>
+                    <var_date4><xsl:value-of select="$date4"/></var_date4>
+                    <daterangestring><xsl:value-of select="concat($date3_string, '-', $date4_string)"/></daterangestring>
+                    
+                    <datestring>
+                        <xsl:value-of select = "concat(translate($date1, 'u', '0'), translate($date2,'u','9'))"/>
+                    </datestring>
                     
                     <xsl:choose>
                         <xsl:when test="$date2_unclear = 'TRUE'">
                             <sngdate>
-                                <caldate><xsl:value-of select="$date1"/></caldate>
+                                <caldate><xsl:value-of select="replace($date1, 'u' ,'0')"/></caldate>
                             </sngdate>
                         </xsl:when>
                         <xsl:when test = "$datetype = 'm' or $datetype = 'q' or $datetype = 'p' or $datetype = 'i' or $datetype = 'k' or $datetype = 'r' or $datetype = 't'">
@@ -501,27 +500,13 @@
             <keywords>
                     <theme>
                         <themekt>LCSH</themekt>
-                        <themekey>Maps</themekey>
-                        
-                        <xsl:for-each select="marc:datafield[@tag=650] [@ind2=0]">
-                            <themekey><xsl:value-of select="marc:subfield[@code='a']" /></themekey>
+                        <xsl:for-each select="distinct-values(marc:datafield[@tag='650'][@ind2='0']/marc:subfield[@code='a'])">
+                            <themekey><xsl:value-of select="." /></themekey>
                         </xsl:for-each>
-                        <xsl:for-each select="marc:datafield[@tag=655] [@ind2=7]">
-                            <xsl:variable name="genre"><xsl:value-of select="marc:subfield[@code='a']"/></xsl:variable>
-                            <xsl:variable name="thesaurus"><xsl:value-of select="marc:subfield[@code='2']"/></xsl:variable>
-                            <xsl:if test="$genre != 'Maps.' and $thesaurus = 'lcgft'"> 
-                                <!--  Strip ending periods in 655s -->
-                                <xsl:variable name="a655"><xsl:value-of select="marc:subfield[@code='a']" /></xsl:variable>
-                                <xsl:variable name="a655Chop">
-                                    <xsl:call-template name="chopPunctuationBack">
-                                        <xsl:with-param name="chopString">
-                                            <xsl:value-of select="$a655"/>
-                                        </xsl:with-param>
-                                    </xsl:call-template>
-                                </xsl:variable>
-                            <themekey><xsl:value-of select="$a655Chop" /></themekey>
-                            </xsl:if>
-                           </xsl:for-each>
+                        
+                        <xsl:for-each select="distinct-values(marc:datafield[@tag='655'][@ind2=7]/marc:subfield[@code='a']/text())">
+                            <themekey><xsl:value-of select="replace(. ,'\.','')"/></themekey>
+                        </xsl:for-each>
                     </theme>
                                 
                     <theme>
@@ -533,12 +518,22 @@
                     
                     World maps are an exception
                     -->
+                <!--
                     <place>
                         <placekt>LCSH</placekt>
-                        <xsl:for-each select="marc:datafield[@tag=651] [@ind2=0]">
+                        <xsl:for-each select="marc:datafield[@tag='651'] [@ind2=0]">
                         <placekey><xsl:value-of select="marc:subfield[@code='a']" /></placekey>
                         </xsl:for-each>
                     </place>
+                -->
+                <!-- Updated 'place' which selects distinct values only -->
+                <place>
+                    <placekt>LCSH</placekt>
+                    <xsl:for-each select="distinct-values(marc:datafield[@tag='651'][@ind2='0']/marc:subfield[@code='a']/text())">
+                        <placekey><xsl:value-of select="." /></placekey>
+                    </xsl:for-each>
+                </place>
+                
             </keywords>
             <accconst>None</accconst>
             <useconst>For educational, non-commercial use only.</useconst>
@@ -587,16 +582,16 @@
             <srcinfo>
                 <srccite>
                     <citeinfo>
-                        <xsl:for-each select="marc:datafield[@tag=100]">
+                        <xsl:for-each select="marc:datafield[@tag='100']">
                             <xsl:call-template name="createNamePersonal"/>
                         </xsl:for-each>
-                        <xsl:for-each select="marc:datafield[@tag=110] |marc:datafield[@tag=111]">
+                        <xsl:for-each select="marc:datafield[@tag='110'] |marc:datafield[@tag='111']">
                             <xsl:call-template name="createNameCorporate"/>
                         </xsl:for-each>
-                        <xsl:for-each select="marc:datafield[@tag=700]">
+                        <xsl:for-each select="marc:datafield[@tag='700']">
                             <xsl:call-template name="createNamePersonal"/>
                         </xsl:for-each>
-                        <xsl:for-each select="marc:datafield[@tag=710] |marc:datafield[@tag=711]">
+                        <xsl:for-each select="marc:datafield[@tag='710'] |marc:datafield[@tag='711']">
                             <xsl:call-template name="createNameCorporate"/>
                         </xsl:for-each>   
                         <pubdate><xsl:value-of select="$date1"/></pubdate>
@@ -606,7 +601,7 @@
                             <pubplace><xsl:value-of select="$placeOfPublication"/></pubplace>
                             <publish><xsl:value-of select="$publisher"/></publish>
                         </pubinfo>
-                        <othercit><xsl:value-of select="marc:datafield[@tag=300]/marc:subfield[@code='a']"/><xsl:text> </xsl:text><xsl:value-of select="marc:datafield[@tag=300]/marc:subfield[@code='b']"/><xsl:text> </xsl:text><xsl:value-of select="marc:datafield[@tag=300]/marc:subfield[@code='c']"/></othercit>
+                        <othercit><xsl:value-of select="marc:datafield[@tag='300']/marc:subfield[@code='a']"/><xsl:text> </xsl:text><xsl:value-of select="marc:datafield[@tag='300']/marc:subfield[@code='b']"/><xsl:text> </xsl:text><xsl:value-of select="marc:datafield[@tag='300']/marc:subfield[@code='c']"/></othercit>
                         <onlink>http://id.lib.harvard.edu/alma/<xsl:value-of select="$HOLLISPermlink"/>/catalog</onlink>
                     </citeinfo>
                 </srccite>

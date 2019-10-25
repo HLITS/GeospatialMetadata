@@ -6,15 +6,15 @@
      <xsl:output method="xml" encoding="UTF-8" indent="yes" doctype-system="http://www.fgdc.gov/metadata/fgdc-std-001-1998.dtd"/>
      
      <!-- ENHANCE - DATETYPE LOGIC and DATES OUTPUT / 
-            -add logic for codes: i, k, p, r, t. n, c, d, u
-            -add logic for converting uu and null values 
-            -add logic for 'q' - questionable date when not a range
+            - add logic for codes: i, k, p, r, t, n, c, d, u
+            - add logic for converting uu and null values 
+            - add logic for 'q' - questionable date when not a range
           ENHANCE - MANUSCRIPT
-          - update abstract "produced", remove publisher; update source publisher "no publisher" = abstract "publisher unknown" src "unknown", 
+            - update abstract "produced", remove publisher; update source publisher "no publisher" = abstract "publisher unknown" src "unknown", 
                     place of publication "no place of publication" = src "unknown";
             update date currency statement "production date"
           ENHANCE - DUPLICATE KEYWORDS
-          - build in logic to remove duplicates
+            - build in logic to remove duplicates
           ENHANCE - when a map is extracted from something, from note in other citation
           ENHANCE - untitled maps, fix [] and update abstract text
           UPDATE - no publisher to publisher unknown for published items
@@ -169,32 +169,15 @@
         
     <!-- identify datetype MARC code -->
     <xsl:variable name="datetype" select="substring(marc:controlfield[@tag=008],7,1)"></xsl:variable>
-    
-    <!-- set date1 pubdate; replace u's with 0's  -->
-     <xsl:variable name="date1a">
-                <xsl:value-of select="substring(marc:controlfield[@tag=008],8,4)"/>
-     </xsl:variable>
-    <xsl:variable name = "date1">
-        <xsl:value-of select="translate($date1a, 'u','0')"/>
+      
+    <xsl:variable name="date1">
+        <xsl:value-of select="substring(marc:controlfield[@tag=008],8,4)"/>
     </xsl:variable>
     
-    <!-- set date2 pubdate; replace u's with 9's -->
-    <xsl:variable name="date2a">
-                <xsl:value-of select="substring(marc:controlfield[@tag=008],12,4)"/>
+    <xsl:variable name="date2">
+        <xsl:value-of select="substring(marc:controlfield[@tag=008],12,4)"/>
     </xsl:variable>
-    
-    <xsl:variable name = "date2">
-        <xsl:value-of select="translate($date2a, 'u','9')"/>
-    </xsl:variable>
-    
-    <xsl:variable name = "date2_valid">
-        <xsl:choose>
-            <xsl:when test="starts-with($date2, ' ') or starts-with($date2, '9')">
-                <xsl:value-of select = "false"></xsl:value-of>
-            </xsl:when>
-            <xsl:otherwise><xsl:value-of select="true"/></xsl:otherwise>
-        </xsl:choose>
-    </xsl:variable>
+    <!-- check validity of date1 and date2; exact? approximate? unknown? -->
     
     <!-- set approximate date indicator-->
     <!-- if 264 $$c or 260 $$c contains '?' or 'between' or "ca." or 
@@ -245,30 +228,55 @@
     </xsl:variable>
     
     <!-- set pubdate string -->
-    
-    <xsl:variable name="titlepubdatestring">
-        <!-- use in <title> -->
+    <xsl:variable name="single_date_title_string">
         <xsl:choose>
-            <!-- set single date/exact -->
-            <xsl:when test="$datetype = 's' and $approximatedate = 'FALSE'">
-                <xsl:value-of select="$date1"/>
+            <xsl:when test = "contains($date1, 'u')">
+                <xsl:value-of select = "concat(' ca. ', translate($date1, 'u', '0'),'-', translate($date1, 'u', '9'))"/>
             </xsl:when>
-            <!-- set single date/approximate -->
+            <xsl:otherwise>
+                <xsl:value-of select="$date1"/>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:variable>
+    
+    <xsl:variable name = "daterange_date1_string">
+    </xsl:variable>
+    
+    <xsl:variable name = "daterange_date2_string">
+    </xsl:variable>
+   <xsl:variable name="titlepubdatestring">
+    <xsl:choose>
+        <xsl:when test="$datetype = 's' or $datetype = 'e'">
+           <xsl:value-of select="$date1"/>
+        </xsl:when>
+        <xsl:when test="$datetype = 'q'">
+            <xsl:value-of select="$single_date_title_string"/>
+        </xsl:when>
+    </xsl:choose>
+   </xsl:variable>
+        
+        
+<!--        use in <title> -->
+<!--        <xsl:choose>
+           <!-\- set single date/exact -\->
+            <xsl:when test="$datetype = 's' and $approximatedate = 'FALSE'">
+            <xsl:value-of select="$date1"/>
+            <!-\- set single date/approximate -\->
             <xsl:when test="$datetype = 's' and $approximatedate = 'TRUE'">
                 <xsl:value-of select="concat('ca. ',$date1)"/>
             </xsl:when>
-            <!-- set detailed date / take only year -->
+            <!-\- set detailed date / take only year -\->
             <xsl:when test="$datetype = 'e'">
                 <xsl:value-of select="$date1"/>
             </xsl:when>
-            <!-- set date range -->
-            <xsl:when test="$datetype = 'm' or $datetype = 'q' and $date2_valid = 'true'">
-                <xsl:value-of select="concat($date1,'-',$date2)"/>
+            <!-\- set date range -\->
+            <xsl:when test="$datetype = 'm' or $datetype = 'q'">
+                <xsl:value-of select="concat('ca. ',$date1,'-',$date2)"/>
             </xsl:when>
-            <!-- DEFAULT -->
+            <!-\- DEFAULT -\->
             <xsl:otherwise><xsl:value-of select="concat('[',$date1,']')"/></xsl:otherwise>            
         </xsl:choose>
-    </xsl:variable>
+    </xsl:variable>-->
     
     <xsl:variable name="pubdatestring">
         <!-- Use in <abstract> -->
@@ -286,7 +294,7 @@
                 <xsl:value-of select="concat(' in ',$date1)"/>
             </xsl:when>
             <!-- set date range -->
-            <xsl:when test="$datetype = 'm' or $datetype = 'q' and $date2_valid = 'true'">
+            <xsl:when test="$datetype = 'm' or $datetype = 'q'">
                 <xsl:value-of select="concat(' between ', $date1,' and ',$date2)"/>
             </xsl:when>
             
@@ -399,21 +407,12 @@
     <debug_correspondingLanguageName><xsl:value-of select="$language"/></debug_correspondingLanguageName>
     <debug_date1><xsl:value-of select = "$date1"/></debug_date1>
     <debug_date2><xsl:value-of select="$date2"/></debug_date2>
-    
-    <debug_date_2_valid>
-        <xsl:choose>
-            <xsl:when test="$date2_valid = 'true'">
-                VALID
-            </xsl:when>
-            <xsl:otherwise>INVALID</xsl:otherwise>
-        </xsl:choose>
-    </debug_date_2_valid>
-    
+    <debug_approxDate><xsl:value-of select="$approximatedate"/></debug_approxDate>
+       
     <!-- end of debugging -->
     
     <xsl:variable name="HOLLISPermlink" select="marc:controlfield[@tag=001]"></xsl:variable>
-    <xsl:variable name="file1" select="document('rLayerID_export.xml')"/>
-    
+    <!--<xsl:variable name="file1" select="document('rLayerID_export.xml')"/>-->
         <idinfo>
             <citation>
                 <citeinfo>
@@ -508,7 +507,7 @@
                 <update>None planned</update>
             </status>
             <spdom>
-                <xsl:copy-of select="$file1/metadata/idinfo/spdom/bounding"/>
+              <!--  <xsl:copy-of select="$file1/metadata/idinfo/spdom/bounding"/>-->
             </spdom>
             <keywords>
                     <theme>
@@ -547,8 +546,10 @@
                     -->
                     <place>
                         <placekt>LCSH</placekt>
-                        <xsl:for-each select="marc:datafield[@tag=651] [@ind2=0]">
-                        <placekey><xsl:value-of select="marc:subfield[@code='a']" /></placekey>
+                        <xsl:for-each select="marc:datafield[@tag=651][@ind2=0]">
+                        <placekey>
+                            <xsl:value-of select="substring(/marc:subfield[@code='a'],10)" />
+                        </placekey>
                         </xsl:for-each>
                     </place>
             </keywords>
@@ -731,9 +732,9 @@
         </lineage>
     </dataqual>
 
-    <xsl:copy-of select="$file1/metadata/spdoinfo"/>
+<!--    <xsl:copy-of select="$file1/metadata/spdoinfo"/>-->
 
-    <xsl:copy-of select="$file1/metadata/spref"/>
+<!--    <xsl:copy-of select="$file1/metadata/spref"/>-->
 
     <eainfo>
         <overview>
