@@ -514,8 +514,19 @@
                         <themekt>ISO 19115 Topic Category</themekt>
                         <themekey>imageryBaseMapsEarthCover</themekey>
                     </theme>
-                    <!-- ENHANCE - Check for null 
+                    <!-- ENHANCE - Check placekey for null - 
                     
+                    <place>
+                    <placekt>None</placekt>
+                    <placekey>Unknown</placekey>
+                    </place>
+                     
+                    World maps don't have 651, they appear 650 -0 World maps.
+                    <place>
+                    <placekt>LCSH</placekt>
+                    <placekey>World maps</placekey>
+                    </place>                   
+ 
                     World maps are an exception
                     -->
                 <!--
