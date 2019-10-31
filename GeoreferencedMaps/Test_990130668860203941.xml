@@ -3,7 +3,7 @@
 <marc:leader>00000nem a2200289Ia 4500</marc:leader>
 <controlfield tag="001">990130668860203941</controlfield>
 <controlfield tag="005">20160224163336.0</controlfield>
-<controlfield tag="008">020528q168u    gw i      a     0   lat d</controlfield>
+<controlfield tag="008">020528q168u        gw i      a     0   lat d</controlfield>
 <datafield ind1="1" ind2=" " tag="034">
 <subfield code="a">a</subfield>
 <subfield code="b">10000000</subfield>
@@ -57,26 +57,31 @@
 <datafield ind1=" " ind2=" " tag="530">
 <subfield code="a">Also available online.</subfield>
 </datafield>
+    
 <datafield ind1=" " ind2="0" tag="651">
 <subfield code="a">Africa, North</subfield>
 <subfield code="x">Maps</subfield>
 <subfield code="v">Early works to 1800.</subfield>
 </datafield>
-    <datafield ind1=" " ind2="0" tag="651">
-        <subfield code="a">Africa, North</subfield>
-        <subfield code="x">Maps</subfield>
-        <subfield code="v">Early works to 1800.</subfield>
-    </datafield>
+<!-- Duplicated 651 0 -->
+<datafield ind1=" " ind2="0" tag="651">
+    <subfield code="a">Africa, North</subfield>
+    <subfield code="x">Maps</subfield>
+    <subfield code="v">Early works to 1800.</subfield>
+</datafield>
+    
 <datafield ind1=" " ind2="0" tag="651">
 <subfield code="a">Europe</subfield>
 <subfield code="v">Maps</subfield>
 <subfield code="v">Early works to 1800.</subfield>
 </datafield>
-    <datafield ind1=" " ind2="0" tag="651">
-        <subfield code="a">Europe</subfield>
-        <subfield code="v">Maps</subfield>
-        <subfield code="v">Early works to 1800.</subfield>
-    </datafield>
+<!-- Duplicated 651 0 -->
+<datafield ind1=" " ind2="0" tag="651">
+    <subfield code="a">Europe</subfield>
+    <subfield code="v">Maps</subfield>
+    <subfield code="v">Early works to 1800.</subfield>
+</datafield>
+    
 <datafield ind1=" " ind2="7" tag="655">
 <subfield code="a">Maps.</subfield>
 <subfield code="2">lcgft.</subfield>
@@ -85,10 +90,12 @@
 <subfield code="a">Early maps.</subfield>
 <subfield code="2">lcgft.</subfield>
 </datafield>
-    <datafield ind1=" " ind2="7" tag="655">
-        <subfield code="a">Early maps.</subfield>
-        <subfield code="2">lcgft.</subfield>
-    </datafield>
+<!-- Duplicated 655 7 -->    
+<datafield ind1=" " ind2="7" tag="655">
+    <subfield code="a">Early maps.</subfield>
+    <subfield code="2">lcgft.</subfield>
+</datafield>
+    
 <datafield ind1="1" ind2=" " tag="700">
 <subfield code="a">Hipschmann, Sigmund Gabriel,</subfield>
 <subfield code="d">1639-</subfield>

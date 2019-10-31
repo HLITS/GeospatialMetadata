@@ -10,7 +10,7 @@
             <origin>Hipschmann, Sigmund Gabriel, 1639-</origin>
             <origin>Hoffmann, Johannes, 1629-1698</origin>
             <pubdate>xxx_PubMonth_xxx</pubdate>
-            <title>Europa in suas partes principales divisa, 168u-     (Raster Image)</title>
+            <title>Europa in suas partes principales divisa,  ca. 1680-1689 (Raster Image)</title>
             <geoform>map</geoform>
             <pubinfo>
                <pubplace>Cambridge, Massachusetts</pubplace>
@@ -20,27 +20,19 @@
          </citeinfo>
       </citation>
       <descript>
-         <language>Latin</language>
-         <primarylanguagecode>lat</primarylanguagecode>
-         <abstract>This layer is a georeferenced raster image of the historic paper map entitled: Europa in suas partes principales divisa : ut sunt: Insulae Britannicae, Scandinavia, Moscovia, Germania, Gallia, Polonia, Hispania,, Italia, Hungaria, et Turcia in Europa, cum adiacentibus regnis, statibus et regionibus. It was published by: Johannes Hoffmannus ca. 168u. Scale [ca. 1:10,000,000].  Map in Latin.
-                The image inside the map neatline is georeferenced to the surface of the earth and fit to the rProjection (EPSG: xxx_EPSG_xxx) coordinate system. All map features and collar and inset information are shown as part of the raster image, including any inset maps, profiles, statistical tables, directories, text, illustrations, index maps, legends, or other information associated with the principal map.                 
-                
+         <abstract>This layer is a georeferenced raster image of the historic paper map entitled: Europa in suas partes principales divisa : ut sunt: Insulae Britannicae, Scandinavia, Moscovia, Germania, Gallia, Polonia, Hispania,, Italia, Hungaria, et Turcia in Europa, cum adiacentibus regnis, statibus et regionibus. It was published by Johannes Hoffmannus ca. 1680. Scale [ca. 1:10,000,000].  Map in Latin.
+                    
+                    The image inside the map neatline is georeferenced to the surface of the earth and fit to the rProjection (EPSG: xxx_EPSG_xxx) coordinate system. All map features and collar and inset information are shown as part of the raster image, including any inset maps, profiles, statistical tables, directories, text, illustrations, index maps, legends, or other information associated with the principal map. 
+                    
                 This layer is part of a selection of digitally scanned and georeferenced historic maps from the Harvard Map Collection. These maps typically portray both natural and manmade features. The selection represents a range of geographies, originators, ground condition dates, scales, and map purposes.</abstract>
          <purpose>Historic paper maps can provide an excellent view of the changes that have occurred in the cultural and physical landscape.  The wide range of information provided on these maps make them useful in the study of historic geography, and urban and rural land use change.  As this map has been georeferenced, it can be used in a GIS as a source or background layer in conjunction with other GIS data.</purpose>
       </descript>
       <timeperd>
          <timeinfo>
-            <var_datetype>q</var_datetype>
-            <var_date1_>168u</var_date1_>
-            <var_date2>    </var_date2>
-            <var_date2_unclear>TRUE</var_date2_unclear>
-            <var_date3>168u</var_date3>
-            <var_date4>169u</var_date4>
-            <daterangestring>1680-1699</daterangestring>
-            <datestring>1680    </datestring>
-            <sngdate>
-               <caldate>1680</caldate>
-            </sngdate>
+            <rngdates>
+               <begdate>1680</begdate>
+               <enddate/>
+            </rngdates>
          </timeinfo>
       </timeperd>
       <status>
