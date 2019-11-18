@@ -1,0 +1,2685 @@
+
+
+farming
+--------------------------------
+Agriculture                    3
+Land use                       3
+Orchards                       2
+Crops                          2
+Maps                           2
+Bodies of water                2
+Landforms                      2
+Human settlements              1
+Cranberries                    1
+Villages                       1
+Garden Structures              1
+Plantations                    1
+Silos                          1
+Oils fields                    1
+Rice                           1
+Fisheries                      1
+Transportation                 1
+Gas fields                     1
+Salt mines and mining          1
+Botanical Gardens              1
+Wetlands                       1
+Farm buildings                 1
+Infrastructure (Economics)     1
+Bogs                           1
+Farms                          1
+Mines and mineral resources    1
+Cities and towns               1
+Garden Paths                   1
+Gardens                        1
+Grain elevators                1
+
+biota
+--------------------------------
+Forests and Forestry             28
+Orchards                         17
+Biodiversity conservation        10
+Plant communities                 8
+Wetlands                          8
+Habitat (Ecology)                 6
+Fisheries                         6
+Trees                             6
+Vegetation                        5
+Forests and forestry              5
+Rivers                            4
+Cutthroat trout                   4
+Steelhead (Fish)                  4
+Marine resources                  4
+Chinook Salmon                    4
+Fish populations                  4
+Coho salmon                       4
+Chum salmon                       4
+Fishes Habitat                    4
+Oncorhynchus                      4
+Plants                            3
+Biotic communities                3
+Ecological regions                3
+Vegetation boundaries             3
+Landscape                         3
+City planning                     2
+Plant diversity conservation      2
+Pitch pine                        2
+Urban land use                    2
+Quercus gambelii                  2
+Marshes                           2
+Sockeye salmon                    2
+Rare animals                      2
+Natural areas                     2
+Lobsters                          2
+Animal diversity conservation     2
+Bodies of water                   2
+Fens                              2
+Swamps                            2
+Shellfish                         2
+Aquatic habitat                   2
+Land cover                        2
+Land use                          2
+Vernal pools                      2
+Grasslands                        2
+Forests                           2
+Pink salmon                       2
+Environment                       2
+Ecology                           1
+Marine fisheries                  1
+Fish                              1
+Names (Geographical)              1
+Riperian areas                    1
+Wetland restoration               1
+Community gardens                 1
+Vernal pool ecology               1
+Bogs                              1
+Rare plants                       1
+Atlantic White Cedar              1
+Plants Habitat                    1
+Floodplains                       1
+Cranberries                       1
+Wildlife habitat                  1
+Tundras                           1
+Marine ecological regions         1
+Salt marshes                      1
+Shrubs                            1
+Prairies                          1
+Fish traps                        1
+Anadromous fishes                 1
+Coastal ecology                   1
+Hydrology                         1
+Vineyards                         1
+Endangered species                1
+Ponds                             1
+Weirs                             1
+Agriculture                       1
+Heathlands                        1
+Sandy soils                       1
+Peatlands                         1
+
+boundaries
+--------------------------------
+Census                                                     2645
+Boundaries                                                 2305
+Demography                                                  813
+Cities and towns                                            562
+Population                                                  536
+Administrative divisions                                    530
+Administrative and political divisions                      429
+Population Statistics                                       352
+Census districts                                            348
+Political divisions                                         257
+Age distribution (Demography)                               233
+Land settlement patterns                                    210
+Households Statistics                                       208
+Income Statistics                                           206
+Sex distribution (Demography)                               206
+Land use planning                                           202
+Schools                                                     190
+School districts                                            188
+Legislators                                                 172
+United States Congress                                      169
+Metropolitan areas                                          164
+County government                                           162
+Housing Statistics                                          157
+Urban land use                                              154
+Zip codes                                                   152
+Election districts                                          146
+Education                                                   144
+Indian reservations                                         126
+Vital statistics                                            116
+Education Statistics                                        109
+Labor supply Statistics                                     103
+Occupations Statistics                                      103
+Marketing                                                   103
+Consumers                                                   103
+Ethnic groups Statistics                                    103
+Shopping                                                    103
+Purchasing power                                            103
+Heating Statistics                                          103
+Topographical surveying                                     101
+Mountains                                                    98
+Islands                                                      98
+Polling places                                               86
+Counties                                                     71
+Statistics                                                   53
+Human settlements                                            47
+Sex Statistics                                               47
+Territory, National                                          41
+Voting                                                       32
+Elections                                                    32
+Political parties                                            32
+Vidhan Sabha                                                 30
+Households                                                   29
+Agriculture Statistics                                       27
+German states                                                24
+Gross domestic product                                       22
+Non-self-governing territories                               21
+Nomads                                                       20
+States                                                       19
+Villages                                                     18
+Property tax                                                 18
+Transportation                                               18
+Maps                                                         18
+Bodies of water                                              18
+Infrastructure (Economics)                                   17
+Labor supply                                                 17
+Taxation rates                                               17
+Land use                                                     16
+Chinese provinces                                            13
+Walls                                                        13
+Fences                                                       12
+Condominium (International law)                              12
+Population geography                                         12
+Literacy                                                     11
+Caste                                                        11
+Landforms                                                    11
+Railroads                                                    11
+City planning                                                10
+Industrial statistics                                         9
+Cities and town                                               8
+Municipal government                                          7
+Telecommunications                                            6
+Political Divisions                                           6
+Telephone Area codes                                          6
+Housing                                                       6
+Partition, Territorial                                        6
+Public lands                                                  6
+Administrative Divisions                                      6
+Childbirth Statistics                                         6
+Mortality Statistics                                          5
+Historic districts                                            5
+Coasts                                                        5
+Legislative bodies                                            5
+Family                                                        5
+Mexican states                                                5
+Real property                                                 5
+Administrative and political districts                        5
+Economic statistics                                           4
+National parks and reserves                                   4
+United Nations. General Assembly                              4
+Parks                                                         4
+Government aid to education                                   4
+Unesco                                                        4
+Occupations                                                   4
+Administrative and political boundaries                       4
+World Health Organization                                     4
+Organization of Petroleum Exporting Countries                 4
+Food and Agriculture Organization of the United Nations       4
+International cooperation                                     4
+Crime                                                         4
+International agencies                                        4
+Unemployment                                                  4
+Criminal Statistics                                           4
+World Meteorological Organization                             4
+International Monetary Fund                                   4
+Surveying                                                     4
+Marital status Statistics                                     4
+Municipal budgets                                             4
+International Atomic Energy Agency                            4
+Land use Planning                                             4
+World Bank                                                    4
+Canadian provinces                                            3
+Shorelines                                                    3
+Life expectancy                                               3
+Employment (Economic theory)                                  3
+Zoning                                                        3
+Industries Classification                                     3
+Ethnic groups                                                 3
+Business enterprises                                          3
+Forest reserves                                               3
+Dams                                                          3
+Continents                                                    3
+Fisheries                                                     2
+Mines and mineral resources                                   2
+International boundaries                                      2
+U.S. states                                                   2
+Real property prices                                          2
+Health status indicators                                      2
+Icebergs                                                      2
+Enterprise zones                                              2
+Child care services                                           2
+State governments                                             2
+Neighborhood                                                  2
+Neighborhood planning                                         2
+Welfare recipients                                            2
+Aquatic habitat                                               2
+House selling                                                 2
+Territorial waters                                            2
+Refuse and refuse disposal                                    2
+Migration, Internal                                           2
+Lok Sabha                                                     2
+Economic development                                          2
+Social indicators                                             2
+Sea ice                                                       2
+Hydrography                                                   2
+Historic buildings                                            2
+Marine resources                                              2
+Real estate business                                          2
+Biotechnology industries                                      2
+Oceans                                                        2
+Educational tests and measurements                            2
+Mortality                                                     2
+High schools                                                  2
+Parliament                                                    2
+Quality control                                               2
+Swamps                                                        2
+Population statistics                                         2
+Economic indicators                                           2
+Shellfish                                                     2
+Economic zones                                                2
+Water districts                                               1
+Food relief                                                   1
+Sewerage                                                      1
+Trails                                                        1
+Place names                                                   1
+U.S. States                                                   1
+Muncipal finance                                              1
+Congressional districts                                       1
+Street cleaning                                               1
+Vehicles                                                      1
+County councils                                               1
+Prisons                                                       1
+Taxation                                                      1
+Coastlines                                                    1
+Judicial districts                                            1
+Building permits                                              1
+Pedestrian areas                                              1
+Syphilis                                                      1
+Languages                                                     1
+Refuse collection                                             1
+Office buildings                                              1
+Cartography                                                   1
+Population forecasting                                        1
+Land use, Urban                                               1
+Hawaiians                                                     1
+Economic zoning                                               1
+Municipal services                                            1
+HIV (viruses) Statistics                                      1
+Rental housing                                                1
+Mississippi                                                   1
+Lead poisoning in children                                    1
+Minorities                                                    1
+Countries                                                     1
+HIV infections                                                1
+Multilingualism                                               1
+Towns                                                         1
+African American students                                     1
+Federal aid                                                   1
+Public health                                                 1
+High school dropouts                                          1
+Scholastic Aptitude Test                                      1
+Hispanic American students                                    1
+Soils                                                         1
+Military bases                                                1
+Telephone area codes                                          1
+Employment                                                    1
+Gonorrhea                                                     1
+Northeast boundary of the United States                       1
+Urban economics                                               1
+Airports                                                      1
+Demographic surveys                                           1
+Administrative and political division                         1
+Boroughs                                                      1
+Motor vehicles                                                1
+Tax assessment                                                1
+Maternal and infant welfare                                   1
+Commercial buildings                                          1
+Buildings                                                     1
+Sewer districts                                               1
+Physicians                                                    1
+Ethnicity                                                     1
+Elementary schools                                            1
+Education finance                                             1
+Boundary disputes                                             1
+Municipal engineering                                         1
+Water supply                                                  1
+Economic zones (Law of the sea)                               1
+Municipal revenue                                             1
+Congress                                                      1
+Economic assistance                                           1
+Middle schools                                                1
+Marital status                                                1
+Real Property                                                 1
+Natural areas                                                 1
+Indian Reservations                                           1
+Nature preserves                                              1
+Citizenship                                                   1
+Educational tests and measurments                             1
+Telecommunication                                             1
+Building Inspectors                                           1
+College entrance achievement tests                            1
+House of Representatives                                      1
+Dwellings                                                     1
+Chlamydia infections                                          1
+National territory                                            1
+Recreation areas                                              1
+Reefs                                                         1
+Housing statistics                                            1
+Minnesota                                                     1
+Substance abuse treatment                                     1
+Drug abuse treatment                                          1
+Sexually transmitted diseases                                 1
+Water utilities                                               1
+Family day care                                               1
+Recycling (Waste, etc.)                                       1
+Poor laws                                                     1
+Gas companies                                                 1
+Fertility, Human Statistics                                   1
+Snow removal                                                  1
+Medical specialists                                           1
+Minority students                                             1
+Rehabilitation centers                                        1
+Fertility, Human                                              1
+Environment                                                   1
+Payrolls                                                      1
+AIDS (Disease)                                                1
+Fire protection districts                                     1
+United States. Congress.                                      1
+Lava flows                                                    1
+Postal codes                                                  1
+Iowa Test of Basic Skills                                     1
+Commercial real estate                                        1
+Neighborhoods                                                 1
+Cities                                                        1
+Human beings Migrations                                       1
+Industrial real estate                                        1
+Transportation Planning                                       1
+Rental Housing                                                1
+Building laws                                                 1
+Real estate management                                        1
+Historic sites                                                1
+Naturalization                                                1
+
+climatologyMeteorologyAtmosphere
+--------------------------------
+Meteorology                                   5
+Climatology                                   5
+Atmosphere                                    4
+World maps                                    2
+Evaporation (Meteorology)                     2
+Maps                                          2
+Bodies of water                               2
+Atmospheric temperature                       2
+Evaporative power                             2
+Evapotranspiration                            2
+Snow                                          1
+Clouds                                        1
+Precipitation (Meteorology) -- Measurement    1
+Earth temperature                             1
+Cloudiness                                    1
+Sunshine                                      1
+Rain                                          1
+Precipitation (Meteorology)                   1
+
+economy
+--------------------------------
+Population Statistics                     298
+Demography                                294
+Census                                    283
+Boundaries                                257
+Age distribution (Demography)             226
+Households Statistics                     208
+Sex distribution (Demography)             206
+Income Statistics                         206
+Housing Statistics                        154
+Vital statistics                          111
+Census districts                          110
+Education Statistics                      107
+Purchasing power                          104
+Marketing                                 103
+Ethnic groups Statistics                  103
+Consumers                                 103
+Labor supply Statistics                   103
+Heating Statistics                        103
+Shopping                                  103
+Occupations Statistics                    103
+Zip codes                                 101
+Sex Statistics                             73
+Labor supply                               53
+Administrative and political divisions     53
+Caste                                      47
+Literacy                                   47
+Human settlements                          38
+Villages                                   37
+Counties                                   25
+Households                                 19
+Gross domestic product                     18
+Agriculture Statistics                     13
+Cities and towns                           11
+Industrial statistics                       9
+Metropolitan areas                          7
+Childbirth Statistics                       5
+Economic statistics                         4
+Occupations                                 4
+Transportation                              4
+Unemployment                                3
+Business enterprises                        3
+Mines and mineral resources                 3
+Industries Classification                   3
+Infrastructure (Economics)                  3
+Marital status Statistics                   3
+Biotechnology industries                    3
+Land use                                    3
+Maps                                        3
+Bodies of water                             3
+Employment (Economic theory)                3
+Economic zones                              2
+Retail trade                                2
+Shopping malls                              2
+Shopping centers                            2
+Life expectancy                             2
+Economic development                        2
+Territory, National                         2
+Mortality Statistics                        2
+Real estate business                        2
+Economic indicators                         2
+U.S. states                                 2
+Landforms                                   2
+House selling                               2
+Enterprise zones                            2
+Industries                                  2
+Social indicators                           2
+Health status indicators                    2
+Real property prices                        2
+Steel-works                                 1
+Gold mines and mining                       1
+Commercial buildings                        1
+Furnaces                                    1
+Migration, Internal                         1
+Municipal budgets                           1
+Real estate management                      1
+Research parks                              1
+Office buildings                            1
+Urban economics                             1
+Salt mines and mining                       1
+Family                                      1
+Welfare recipients                          1
+Municipal government                        1
+Economic assistance                         1
+Economic zoning                             1
+Employment                                  1
+Biomedical engineering                      1
+Weirs                                       1
+Names (Geographical)                        1
+Fisheries                                   1
+Pharmaceutical industries                   1
+Fish traps                                  1
+Food relief                                 1
+Information technology parks                1
+Fertility, Human                            1
+Maternal and infant welfare                 1
+Payrolls                                    1
+Ethnic groups                               1
+Consumption (Economics)                     1
+Factories                                   1
+Railroads                                   1
+Iron industry and trade                     1
+Industrial districts                        1
+Federal aid                                 1
+Mills and mill-work                         1
+Corporations Taxation                       1
+
+elevation
+--------------------------------
+Altitudes                      100
+Contours (Cartography)          46
+Mountains                       10
+Contours                         7
+Landforms                        7
+Bathymetric maps                 6
+Altitudes -- Measurement         5
+Bodies of water                  5
+Topographic maps                 5
+Earth Surface                    4
+Remote sensing maps              4
+World maps, physical             3
+World maps                       3
+Slopes (Physical geography)      3
+Elevation                        2
+Surveying                        2
+Topographic                      2
+Drainage                         1
+Hydrography                      1
+Names (Geographical)             1
+Groundwater                      1
+Altitude                         1
+Coasts                           1
+Optical radar                    1
+Hydrology                        1
+Wells                            1
+Bench-marks                      1
+Oceans                           1
+Cartography                      1
+Submarine topography             1
+Watersheds                       1
+
+environment
+--------------------------------
+Water-supply                            20
+Natural resources conservation areas    17
+Groundwater                             15
+Parks                                   15
+Wellhead protection                     14
+Water districts                         12
+National parks and reserves             11
+Wellheads                               10
+Biodiversity conservation               10
+Forest reserves                         10
+Plant communities                        8
+Wetlands                                 8
+Natural areas                            7
+Habitat (Ecology)                        6
+Recreation areas                         6
+Environment                              5
+Cemeteries                               4
+Mountains                                4
+Open spaces                              4
+Watershed management                     3
+Agricultural conservation                3
+Environmentally sensitive areas          3
+Mines and mineral resources              3
+Vegetation                               3
+Biotic communities                       3
+Parkways                                 3
+Fisheries                                3
+Ecological regions                       3
+Forests                                  3
+Drinking water                           2
+Quercus gambelii                         2
+Vernal pools                             2
+Aquatic habitat                          2
+Shellfish                                2
+Natural gas                              2
+Rare animals                             2
+Altitudes                                2
+Animal diversity conservation            2
+Pitch pine                               2
+Marine resources                         2
+Bodies of water                          2
+Plant diversity conservation             2
+Wetland ecology                          2
+Rivers                                   2
+Land cover                               2
+Petroleum                                2
+Sandy soils                              1
+Vernal pool ecology                      1
+Forests and forestry                     1
+Geology                                  1
+Abandoned coal mines                     1
+Water quality management                 1
+Recycling (Waste, etc.)                  1
+Land use                                 1
+Wildlife habitat                         1
+Wetland restoration                      1
+Landscape                                1
+Plants Habitat                           1
+Marine fisheries                         1
+Physiographic provinces                  1
+Rare plants                              1
+Atlantic White Cedar                     1
+Water Pollution potential                1
+Golf courses                             1
+Fills (Earthwork)                        1
+Petroleum reserves                       1
+Groundwater disposal                     1
+Hazardous wastes                         1
+Urban runoff                             1
+Factory and trade waste                  1
+Hazardous waste sites                    1
+local park or forest                     1
+Fuelbreaks                               1
+Wilderness areas                         1
+Natural gas reserves                     1
+Marine ecological regions                1
+Floodplains                              1
+Hydrography                              1
+Pollution prevention                     1
+Reserves                                 1
+Oil fields                               1
+Ponds                                    1
+Riperian areas                           1
+Fens                                     1
+Hazard mitigation                        1
+Heathlands                               1
+Water                                    1
+Peatlands                                1
+Endangered species                       1
+Nature preserves                         1
+Watersheds                               1
+Refuse disposal facilities               1
+Hydrology                                1
+Gas fields                               1
+Coastal ecology                          1
+Hazardous waste treatment facilities     1
+Emergency water supply                   1
+Plants                                   1
+Sanitation                               1
+Environmental quality                    1
+Environmental protection                 1
+Coal mines and mining                    1
+Ecology                                  1
+Salt marshes                             1
+Fish                                     1
+Grasslands                               1
+Anadromous fishes                        1
+
+geoscientificInformation
+--------------------------------
+Landforms                                 40
+Mines and mineral resources               28
+Geology                                   24
+Bodies of water                           21
+Maps                                      21
+Infrastructure (Economics)                19
+Transportation                            19
+Cities and towns                          19
+Human settlements                         19
+Land use                                  19
+Maps, Topographic                         15
+Soils                                      9
+Geomorphology                              8
+Mountains                                  8
+Altitudes                                  6
+Faults (Geology)                           6
+Petrology                                  6
+Salt mines and mining                      5
+Contours (Cartography)                     5
+Physiographic provinces                    4
+Villages                                   4
+Volcanoes                                  4
+Earthquakes                                4
+Gold mines and mining                      3
+Landslides                                 3
+Geology, Structural                        3
+Gas fields                                 3
+Hazard mitigation                          3
+Quarries and quarrying                     2
+Glaciers                                   2
+Earthflows                                 2
+Landscape                                  2
+Ice fields                                 2
+World maps                                 2
+Petroleum                                  2
+Cliffs                                     2
+Natural gas                                2
+Earthquake magnitude                       2
+Petroleum reserves                         2
+Seismic event location                     2
+Administrative and political divisions     2
+Seismology                                 2
+Natural gas reserves                       2
+Fault zones                                2
+Debris avalanches                          2
+Oils fields                                2
+Gas wells                                  2
+Geomagnetism                               2
+Coal mines and mining                      1
+Oils wells                                 1
+Earthquake hazard analysis                 1
+Levees                                     1
+Grasslands                                 1
+Earthquake zones                           1
+Snow                                       1
+Sand dunes                                 1
+Sea ice                                    1
+Plant communities                          1
+Oil wells                                  1
+Oil fields                                 1
+Biodiversity conservation                  1
+Fisheries                                  1
+Landslide hazard analysis                  1
+Icebergs                                   1
+Mines and mining                           1
+Flumes                                     1
+Geophysical prospecting                    1
+Lithology                                  1
+Mountain passes                            1
+Eskers                                     1
+Abandoned coal mines                       1
+Wells                                      1
+Magnetic declination                       1
+Erosion                                    1
+Conveying machinery                        1
+Sand                                       1
+Sandy soils                                1
+Heathlands                                 1
+Salt pans                                  1
+Geothermal resources                       1
+Caves                                      1
+Rocks                                      1
+Volcanic eruptions                         1
+Hot springs                                1
+Boundaries                                 1
+
+health
+--------------------------------
+Hospitals                        11
+Medical care                      6
+Demography                        4
+Population statistics             3
+Vital statistics                  3
+Medical centers                   2
+Mortality                         2
+Health facilities                 2
+Senior centers                    1
+Human beings Migrations           1
+AIDS (Disease)                    1
+Age distribution (Demography)     1
+Childbirth statistics             1
+Biomedical engineering            1
+Population Statistics             1
+Lead poisoning in children        1
+Rehabilitation centers            1
+Drug abuse treatment              1
+Substance abuse treatment         1
+Pharmaceutical industries         1
+Boundaries                        1
+Biotechnology industries          1
+Food relief                       1
+Gonorrhea                         1
+Public health                     1
+Maternal and infant welfare       1
+Medical specialists               1
+Syphilis                          1
+Physicians                        1
+Life expectancy                   1
+Mortality Statistics              1
+Congregate housing                1
+Fertility, Human Statistics       1
+HIV (viruses) Statistics          1
+Nursing homes                     1
+Territory, National               1
+Chlamydia infections              1
+HIV infections                    1
+Welfare recipients                1
+Sexually transmitted diseases     1
+
+imageryBaseMapsEarthCover
+--------------------------------
+Maps                                                       2422
+Bodies of water                                            2377
+Human settlements                                          2310
+Landforms                                                  2131
+Land use                                                   1842
+Transportation                                             1631
+Infrastructure (Economics)                                 1482
+Cities and towns                                           1430
+Landowners                                                  869
+Real property                                               758
+Buildings                                                   696
+Maps, Topographic                                           679
+Insurance, Fire                                             658
+Villages                                                    577
+Infrastructure                                              468
+Census                                                      306
+Administrative and political divisions                      227
+Boundaries                                                  214
+Nautical charts                                             208
+Harbors                                                     165
+Coasts                                                      165
+Aeronautical charts                                         156
+Hydrography                                                 143
+Islands                                                     125
+Parks                                                       108
+Mountains                                                   106
+Cemeteries                                                  106
+Recreation areas                                            102
+Airports                                                    101
+Military installations                                      101
+Topographical surveying                                     101
+Religious institutions                                      101
+Camp sites                                                   99
+Land Use                                                     90
+Earth Surface                                                58
+Geological Survey (U.S.)                                     56
+Vegetation mapping                                           50
+Railroads                                                    49
+Fortification                                                43
+Coral reefs and islands                                      36
+Maps, Manuscript                                             33
+Discovery and exploration                                    30
+Rivers                                                       29
+City planning                                                25
+Forests and forestry                                         24
+Grasslands                                                   23
+World maps                                                   23
+Agriculture                                                  20
+Mines and mineral resources                                  18
+Canals                                                       17
+Geology                                                      16
+Sand dunes                                                   16
+Civil War, 1861-1865                                         14
+Scientific expeditions                                       12
+Names (Geographical)                                         12
+River surveys                                                11
+Aerial views                                                 11
+Fences                                                       10
+Voyages and travels                                          10
+Exhibitions                                                   9
+Cliffs                                                        9
+Roads                                                         8
+Geomorphology                                                 8
+Land cover                                                    8
+Maps, Tourist                                                 8
+Cook, James, 1728-1779.                                       8
+Channels (Hydraulic engineering)                              8
+Altitudes                                                     7
+Historic sites                                                7
+Bathymetric maps                                              6
+Population geography                                          6
+Shorelines                                                    6
+Population                                                    6
+Human geography                                               6
+Petrology                                                     6
+Postal service                                                6
+Volcanoes                                                     6
+Mounds                                                        6
+Travel                                                        5
+Zoning                                                        5
+Farms                                                         5
+United States History Revolution, 1775-1783                   5
+Names, Geographical                                           5
+Beaches                                                       5
+Post roads                                                    5
+Rock slopes                                                   4
+Banks (Oceanography)                                          4
+Boulders                                                      4
+Remote sensing maps                                           4
+Warehouses                                                    4
+Heathlands                                                    4
+Maps, Pictorial                                               4
+Polders                                                       4
+Topographic maps                                              4
+Forest nurseries                                              4
+Moors (Wetlands)                                              4
+Dams                                                          4
+Seas                                                          4
+Fords (Stream crossings)                                      4
+Railroad yards                                                4
+Orchards                                                      4
+Land use, Urban                                               4
+Fires                                                         4
+Estuaries                                                     4
+Rocks                                                         3
+Street-railroads                                              3
+Slopes (Physical geography)                                   3
+Extinct cities                                                3
+Public buildings                                              3
+World maps, physical                                          3
+Lava flows                                                    3
+Aerial view                                                   3
+Streets                                                       3
+Industrial buildings                                          3
+Historic buildings                                            3
+Wetlands                                                      3
+Alleys                                                        3
+Map, Topographic                                              3
+Swamps                                                        3
+Maps, Outline and base.                                       3
+United States--History--Revolution, 1775-1783                 3
+Incas                                                         3
+Gold mines and mining                                         3
+Discoveries in geography                                      3
+Archaeological site location                                  3
+Continents                                                    3
+Land settlement patterns                                      2
+History                                                       2
+Ethnology                                                     2
+Austrian Succession, War of, 1740-1748                        2
+Deserts                                                       2
+Public lands                                                  2
+Atmospheric temperature                                       2
+Water-supply                                                  2
+Mines and mining                                              2
+Labels                                                        2
+Salt pans                                                     2
+Waterworks                                                    2
+Military bases                                                2
+Census districts                                              2
+Acquisition of territory                                      2
+Wetland ecology                                               2
+Election districts                                            2
+Caves                                                         2
+Camp sites, facilities, etc                                   2
+Remote-sensing images                                         2
+Indians of North America                                      2
+Sewerage                                                      2
+Water utilities                                               2
+Bays                                                          2
+Submarine topography                                          2
+Subways                                                       2
+Geomagnetism                                                  2
+Soils                                                         2
+Sieges                                                        2
+Glacial landforms                                             2
+Landscape                                                     2
+Bicycle trails                                                2
+Factories                                                     2
+Quebec Campaign, 1759                                         2
+Rice                                                          1
+Lithology                                                     1
+Gardens                                                       1
+Vegetation boundaries                                         1
+Water-pipes                                                   1
+Shipyards                                                     1
+Ice -- Manufacture                                            1
+Cecchi, Antonio, 1849-1896                                    1
+Ocean currents                                                1
+Conquerors                                                    1
+Northeast boundary of the United States                       1
+Iron-works                                                    1
+Louisiana Purchase Exposition (1904 : Saint Louis, Mo.)       1
+Earth surface                                                 1
+Colonization                                                  1
+Crops                                                         1
+Sherman, William T. (William Tecumseh), 1820-1891             1
+Colonies                                                      1
+Garden Paths                                                  1
+Cold Harbor, Battle of, Va., 1864                             1
+Siege, 1775-1776                                              1
+Sherman's March through the Carolinas                         1
+Capes (Coasts)                                                1
+Underwater tunnels                                            1
+Centennial Exhibition (1876 : Philadelphia, Pa.)              1
+Sociology, Urban                                              1
+Iron industry and trade                                       1
+Mountain passes                                               1
+Regattas                                                      1
+Recreation                                                    1
+Railroads Crossings                                           1
+Water districts                                               1
+Coast defenses                                                1
+Coastal settlements                                           1
+Glaciers                                                      1
+Administrative and political division                         1
+Groundwater                                                   1
+Furnaces                                                      1
+Cadastral maps                                                1
+Mills and mill-work                                           1
+Trails                                                        1
+Manufacturing industries                                      1
+Botanical Gardens                                             1
+Trading posts                                                 1
+Hammocks (Woodlands)                                          1
+Corinth, Battle of, Corinth, Miss., 1862                      1
+Tide mills                                                    1
+Great Wall of China (China)                                   1
+Juvenile delinquents                                          1
+Steel-works                                                   1
+Hull Yacht Club                                               1
+Boroughs                                                      1
+Ice                                                           1
+Prestonpans, Battle of, Prestonpans, Scotland, 1745           1
+Water rights                                                  1
+Defenses                                                      1
+Fortifications                                                1
+Land grants                                                   1
+Great Fire, Boston, Mass., 1872                               1
+Prisons                                                       1
+Industries                                                    1
+Telegraph                                                     1
+Albatross (Steamer)                                           1
+Orthophotography                                              1
+Railway mail service                                          1
+Ponds                                                         1
+Geography, Ancient                                            1
+Fault zones                                                   1
+Garden Structures                                             1
+Ocean bottom                                                  1
+Sounding and soundings                                        1
+Maps, topographic                                             1
+Ice industry                                                  1
+Great Fire, Chicago, Ill., 1871                               1
+Tunnels                                                       1
+Chiarini, G.                                                  1
+Railroads, elevated                                           1
+Mines                                                         1
+Cranberies                                                    1
+Watersheds                                                    1
+Spotsylvania Court House, Battle of, Va., 1864                1
+Antietam, Battle of, Md., 1862                                1
+Magnetic declination                                          1
+Public utilities                                              1
+Parkways                                                      1
+Genghis Khan, 1162-1227                                       1
+Lakes                                                         1
+Railroad terminals                                            1
+Reservoirs                                                    1
+Trade winds                                                   1
+Catholic Church                                               1
+Optical radar                                                 1
+Public spaces                                                 1
+Fort Sanders, Battle of, Knoxville, Tenn., 1863               1
+Traffic density                                               1
+Cartography                                                   1
+Oceans                                                        1
+Poor laws                                                     1
+Ocean temperature                                             1
+Vegetation                                                    1
+Civic improvement                                             1
+Tax assessment                                                1
+Boundary disputes                                             1
+Missions                                                      1
+Siege, 1779-1783                                              1
+Vettor Pisani (Ship)                                          1
+Tundras                                                       1
+Valleys                                                       1
+Steamboat lines                                               1
+Gas companies                                                 1
+Earthquakes                                                   1
+Bunker Hill, Battle of, Boston, Mass., 1775                   1
+Buildingsr                                                    1
+Wharves                                                       1
+Open spaces                                                   1
+Golf courses                                                  1
+Antiquities                                                   1
+Fish ponds                                                    1
+Siege, 1762                                                   1
+
+intelligenceMilitary
+--------------------------------
+Census                                                 204
+Recreation areas                                       204
+Parks                                                  203
+Camp sites                                             199
+Airports                                               160
+Military installations                                 158
+Water                                                  103
+Rivers                                                 103
+Cemeteries                                             101
+Religious institutions                                 101
+Maps                                                    41
+Bodies of water                                         41
+Infrastructure (Economics)                              39
+Human settlements                                       39
+Transportation                                          38
+Land use                                                37
+Fortification                                           36
+Cities and towns                                        25
+Landforms                                               24
+Civil War, 1861-1865                                    14
+Maps, Manuscript                                        10
+Villages                                                 9
+Landowners                                               7
+Military bases                                           7
+Nautical charts                                          4
+Harbors                                                  4
+Universities and colleges                                3
+United States--History--Revolution, 1775-1783            3
+United States History Revolution, 1775-1783              3
+Camp sites, facilities, etc.                             3
+Coasts                                                   3
+Hydrography                                              2
+Sieges                                                   2
+Austrian Succession, War of, 1740-1748                   2
+Islands                                                  2
+Quebec Campaign, 1759                                    2
+Camp sites, facilities, etc                              2
+Mountains                                                1
+Corinth, Battle of, Corinth, Miss., 1862                 1
+Indians of North America                                 1
+Boundary disputes                                        1
+Administrative and political division                    1
+Coast defenses                                           1
+Petroleum refineries                                     1
+Telegraph                                                1
+Siege, 1779-1783                                         1
+National parks and preserves                             1
+Buildings                                                1
+Fortifications                                           1
+Prestonpans, Battle of, Prestonpans, Scotland, 1745      1
+History                                                  1
+Navy-yards and naval stations                            1
+Defenses                                                 1
+Oil fields                                               1
+Cold Harbor, Battle of, Va., 1864                        1
+Public utilities                                         1
+Fort Sanders, Battle of, Knoxville, Tenn., 1863          1
+Real property                                            1
+Spotsylvania Court House, Battle of, Va., 1864           1
+Sherman, William T. (William Tecumseh), 1820-1891        1
+Maps, Topographic                                        1
+Power plants                                             1
+Antietam, Battle of, Md., 1862                           1
+Bunker Hill, Battle of, Boston, Mass., 1775              1
+Sherman's March through the Carolinas                    1
+Siege, 1775-1776                                         1
+Siege, 1762                                              1
+
+inlandWaters
+--------------------------------
+Rivers                                  512
+Census                                  312
+Water                                   299
+Bodies of water                         281
+Hydrography                             275
+Shorelines                              213
+Lakes                                   195
+Reservoirs                              141
+Ponds                                   116
+Hydrology                               111
+Bays                                    108
+Parks                                   103
+Recreation areas                        103
+Camp sites                              100
+Airports                                 58
+Floodplains                              58
+Military installations                   57
+Flood forecasting                        56
+Floods                                   56
+Flood insurance                          56
+Human settlements                        47
+Landforms                                38
+Maps                                     38
+Seas                                     36
+Transportation                           32
+Land use                                 32
+Coasts                                   30
+Cities and towns                         30
+Water-supply                             27
+Ocean                                    25
+Infrastructure (Economics)               22
+Channels (Hydraulic engineering)         22
+Seashore                                 21
+Groundwater                              20
+Ditches                                  20
+Villages                                 20
+Natural resources conservation areas     17
+Canals                                   15
+Nautical charts                          15
+Watersheds                               15
+Springs                                  14
+Wetlands                                 13
+Water districts                          12
+Wellhead protection                      11
+River surveys                            11
+Scientific expeditions                   10
+Infrastructure                           10
+Wellheads                                10
+Harbors                                  10
+Waterfalls                               10
+Maps, Manuscript                         10
+Rapids                                    9
+Wells                                     9
+Locks (Hydraulic engineering)             9
+Waterways                                 8
+Swamps                                    8
+Islands                                   8
+Aqueducts                                 5
+Cutthroat trout                           4
+Lagoons                                   4
+Coho salmon                               4
+Fishes Habitat                            4
+Chinook Salmon                            4
+Chum salmon                               4
+Fish populations                          4
+Marshes                                   4
+Steelhead (Fish)                          4
+Drinking water                            4
+Oncorhynchus                              4
+Bayous                                    3
+Camp sites, facilities, etc.              3
+Biodiversity conservation                 3
+Glaciers                                  3
+Universities and colleges                 3
+Plant communities                         3
+Dams                                      3
+Military bases                            3
+Wetland ecology                           2
+Sockeye salmon                            2
+Water quality monitoring stations         2
+Streamflow                                2
+Aquifers                                  2
+Public lands                              2
+Names (Geographical)                      2
+Parkways                                  2
+Pink salmon                               2
+Fens                                      2
+Water quality                             2
+River channels                            2
+Artesian wells                            1
+Marine fisheries                          1
+Wetland restoration                       1
+Penstocks                                 1
+Hydraulic structures                      1
+Fisheries                                 1
+Cemeteries                                1
+Riperian areas                            1
+Vernal pools                              1
+Geothermal resources                      1
+Stream measurements                       1
+Bodies of Water                           1
+Anadromous fishes                         1
+Classification                            1
+National parks and preserves              1
+Shipwrecks                                1
+Stream-gaging stations                    1
+Stream measurement                        1
+Names, Geographical                       1
+Fish                                      1
+Atlantic White Cedar                      1
+Bogs                                      1
+Discovery and exploration                 1
+Shorelines Monitoring                     1
+lakes                                     1
+Trading posts                             1
+Salt marshes                              1
+Emergency water supply                    1
+Water quality management                  1
+Water supply                              1
+Altitudes                                 1
+Weirs                                     1
+Groundwater disposal                      1
+Hot springs                               1
+Water Pollution potential                 1
+Drainage                                  1
+Peatlands                                 1
+Sluice gates                              1
+Environmentally sensitive areas           1
+Urban runoff                              1
+Valleys                                   1
+Flumes                                    1
+Wildlife habitat                          1
+Municipal water supply                    1
+
+location
+--------------------------------
+Human settlements                                         195
+Census                                                    186
+Cities and towns                                          142
+Villages                                                  132
+Buildings                                                 108
+Airports                                                  108
+Shopping centers                                          102
+Apartment houses                                           98
+Zip codes                                                  76
+Names, Geographical                                        70
+Population Statistics                                      56
+Boundaries                                                 56
+Capitals (Cities)                                          48
+Housing Statistics                                         38
+Sports facilities                                          38
+Demography                                                 37
+Literacy                                                   36
+Labor supply                                               36
+Sex Statistics                                             36
+Caste                                                      36
+Arenas                                                     34
+School buildings                                           34
+Church buildings                                           32
+Cemeteries                                                 30
+Postal service                                             29
+Farms                                                      26
+Service stations                                           23
+Monuments                                                  18
+Gazetteers                                                 16
+Mines and mineral resources                                15
+Place names                                                15
+Landforms                                                  13
+Cities                                                     13
+German states                                              12
+Towns                                                      11
+Names (Geographical)                                       10
+Industrial buildings                                       10
+Harbors                                                     9
+Administrative divisions                                    9
+Hospitals                                                   9
+Recreation areas                                            8
+Quarries and quarrying                                      8
+Islands                                                     7
+Mountains                                                   7
+Grids (Cartography)                                         7
+Administrative Divisions                                    6
+Postal codes                                                6
+Medical care                                                6
+Bench-marks                                                 6
+Water mills                                                 6
+Political Divisions                                         6
+County government                                           6
+Population                                                  6
+Index maps                                                  5
+Capes (Coasts)                                              5
+Windmills                                                   5
+Public buildings                                            5
+Channels (Hydraulic engineering)                            5
+Scenic overlooks                                            4
+Memorials                                                   4
+Tennis courts                                               4
+Cranes, derricks, etc.                                      4
+Drilling and boring machinery                               4
+Mountain resorts                                            4
+Wind turbines                                               4
+Business parks                                              4
+Administrative and political divisions                      4
+Banks (Oceanography)                                        4
+Gas wells                                                   4
+Tide stations                                               4
+Lighthouses                                                 4
+Dams                                                        4
+Radio beacons                                               4
+Moors (Wetlands)                                            4
+Bodies of water                                             4
+Domes                                                       4
+Water treatment plants                                      4
+Parks                                                       4
+Traffic signs and signals                                   4
+Skating rinks                                               4
+Dolmens                                                     4
+Wells                                                       4
+Forests and forestry                                        4
+Racetracks (Horse racing)                                   4
+Chapels                                                     4
+Camp sites, facilities, etc.                                4
+Postal zone                                                 4
+Radio telescopes                                            4
+Sand dunes                                                  4
+Polders                                                     4
+Chimneys                                                    4
+Estuaries                                                   4
+Beacons                                                     4
+Heathlands                                                  4
+Anchorage                                                   4
+Weirs                                                       4
+Watchtowers                                                 4
+Lampposts                                                   4
+Columns                                                     4
+Sluice gates                                                4
+Tollhouses                                                  4
+Golf courses                                                4
+Rifle-ranges                                                4
+Power-plants                                                4
+Fisheries                                                   4
+Trees                                                       4
+Flues                                                       4
+Botanical gardens                                           4
+Crosses                                                     4
+Marinas                                                     4
+Signs and signboards                                        4
+Poles (Engineering)                                         4
+Cooling towers                                              4
+Seas                                                        4
+Metropolitan areas                                          4
+Heliports                                                   4
+Fire lookout stations                                       4
+Fords (Stream crossings)                                    4
+Mounds                                                      4
+Meteorological stations, Radar                              4
+Land cover                                                  4
+Trailer camps                                               4
+Latitude                                                    3
+City planning                                               3
+Human Settlements                                           3
+Chinese provinces                                           3
+Postal zones                                                3
+Longitude                                                   3
+City blocks                                                 3
+Urban land use                                              3
+Land use                                                    3
+Public institutions                                         3
+Coordinates                                                 2
+Health facilities                                           2
+Time Systems and standards                                  2
+Universal transverse Mercator projection (Cartography)      2
+Rivers                                                      2
+Museums                                                     2
+Cartography                                                 2
+Cities and town                                             2
+Street addresses                                            2
+Neighborhood                                                2
+Land settlement                                             2
+Altitudes                                                   2
+Schools                                                     2
+Antiquities                                                 2
+Tourism                                                     2
+Labels                                                      2
+Lakes                                                       2
+Quality control                                             2
+Shopping malls                                              2
+Retail trade                                                2
+Reservoirs                                                  1
+Grides(Cartography)                                         1
+Political divisions                                         1
+Towers                                                      1
+Grids                                                       1
+Counties                                                    1
+Industrial districts                                        1
+Continents                                                  1
+Farm buildings                                              1
+Transportation                                              1
+Historic sites                                              1
+Historical markers                                          1
+Industries                                                  1
+Medical centers                                             1
+Public utilities                                            1
+Post office buildings                                       1
+Bus terminals                                               1
+Post office stations and branches                           1
+Day care centers                                            1
+Bays                                                        1
+Real property                                               1
+Geographical positions                                      1
+Military bases                                              1
+Rocks                                                       1
+Transportation Planning                                     1
+Mosques                                                     1
+Power plants                                                1
+Beaches                                                     1
+Biotechnology industries                                    1
+County Government                                           1
+Research parks                                              1
+Hotels                                                      1
+Geographic positions                                        1
+Coasts                                                      1
+Surveying                                                   1
+Universities                                                1
+Ruins                                                       1
+Libraries                                                   1
+Mine shafts                                                 1
+Recreation                                                  1
+Sports                                                      1
+Temples                                                     1
+World maps                                                  1
+Oil fields                                                  1
+Huts                                                        1
+Culture and tourism                                         1
+Topographic maps                                            1
+Central business districts                                  1
+Palaces                                                     1
+Shorelines                                                  1
+Railroads                                                   1
+Relics                                                      1
+Petroleum refineries                                        1
+Colleges                                                    1
+World Maps                                                  1
+Information technology parks                                1
+
+oceans
+--------------------------------
+Bodies of water                                198
+Coasts                                         178
+Maps                                           165
+Nautical charts                                155
+Human settlements                              147
+Landforms                                      143
+Harbors                                        141
+Cities and towns                               139
+Hydrography                                    136
+Transportation                                  33
+Ocean                                           27
+Lakes                                           25
+Seas                                            23
+Seashore                                        22
+Infrastructure (Economics)                      19
+Land use                                        17
+Villages                                        14
+Rivers                                          11
+Bathymetric maps                                11
+Reefs                                            7
+River surveys                                    6
+Shorelines                                       5
+Fisheries                                        5
+Islands                                          5
+Discovery and exploration                        4
+Submarine topography                             4
+Marine resources                                 4
+Icebergs                                         3
+Names, Geographical                              3
+Oceans                                           3
+Gazetteers                                       3
+Sea ice                                          3
+Shipwrecks                                       3
+Airports                                         3
+Boundaries                                       2
+Names (Geographical)                             2
+Lobsters                                         2
+Aquatic habitat                                  2
+Shellfish                                        2
+Channels (Hydraulic engineering)                 2
+Oceanography                                     2
+Coral reefs and islands                          2
+Administrative and political divisions           2
+Rocks                                            2
+Ecological regions                               1
+Territory, National                              1
+Regattas                                         1
+Fish traps                                       1
+Biotic communities                               1
+Contours                                         1
+Plant communities                                1
+Marine geology                                   1
+Ocean currents                                   1
+Shorelines Monitoring                            1
+Ditches                                          1
+United States History Revolution, 1775-1783      1
+Bays                                             1
+Biodiversity conservation                        1
+Anchorage                                        1
+Territorial waters                               1
+Shipping                                         1
+Coastal settlements                              1
+Marine ecological regions                        1
+Beacons                                          1
+World maps                                       1
+Navigation                                       1
+Chinese provinces                                1
+Beaches                                          1
+Breakwaters                                      1
+Sand bars                                        1
+Groundwater                                      1
+Water                                            1
+Altitudes                                        1
+Maps, topographic                                1
+Steamboat lines                                  1
+Hull Yacht Club                                  1
+Albatross (Steamer)                              1
+Trading posts                                    1
+Weirs                                            1
+Coastal geology                                  1
+Ocean bottom                                     1
+Scientific expeditions                           1
+Voyages and travels                              1
+Wells                                            1
+Sounding and soundings                           1
+Coastal ecology                                  1
+Lighthouses                                      1
+Bathymetry                                       1
+Fortification                                    1
+Ocean temperature                                1
+Banks (Oceanography)                             1
+
+planningCadastre
+--------------------------------
+Maps                                      733
+Real property                             723
+Landowners                                707
+Buildings                                 697
+Insurance, Fire                           658
+Human settlements                          95
+Land use                                   80
+Bodies of water                            71
+Transportation                             69
+Infrastructure (Economics)                 66
+Cities and towns                           61
+Landforms                                  48
+City planning                              36
+Villages                                   18
+Property tax                               18
+Taxation rates                             17
+Administrative and political divisions     15
+Urban land use                             13
+Zoning                                     12
+Public lands                               12
+Boundaries                                 10
+Parkways                                    6
+Open spaces                                 6
+Parks                                       6
+Historic districts                          5
+Recreation areas                            5
+Housing                                     4
+Tax assessment                              4
+Surveying                                   4
+Indian reservations                         4
+Streets                                     4
+Maps, Manuscript                            4
+Cemeteries                                  4
+Historic buildings                          4
+Roads                                       4
+Wellhead protection                         3
+Watershed management                        3
+Vegetation                                  3
+Agricultural conservation                   3
+Earth Surface                               3
+Natural areas                               3
+Forest reserves                             3
+City blocks                                 3
+Land grants                                 2
+Public spaces                               2
+Military bases                              2
+Economic development                        2
+Neighborhood planning                       2
+Economic zoning                             2
+Servitudes                                  2
+Rivers                                      2
+Landscape                                   2
+Enterprise zones                            2
+Trees                                       2
+Community gardens                           1
+Government aid                              1
+Farms                                       1
+Muncipal finance                            1
+Exhibitions                                 1
+Building permits                            1
+Neighborhood                                1
+Public buildings                            1
+Maps, Outline and base.                     1
+Right of way                                1
+City Planning                               1
+Greenbelts                                  1
+Golf courses                                1
+Pedestrian areas                            1
+Building Inspectors                         1
+Tide mills                                  1
+Municipal revenue                           1
+Sidewalks                                   1
+Territorial waters                          1
+Historic preservation                       1
+Economic zones (Law of the sea)             1
+Roofs                                       1
+Commercial real estate                      1
+Regional planning                           1
+Neighborhoods                               1
+Taxation                                    1
+Great Fire, Boston, Mass., 1872             1
+Alleys                                      1
+Fires                                       1
+Metropolitan areas                          1
+Historic sites                              1
+Corporations Taxation                       1
+Urbanization                                1
+Iron-works                                  1
+Indian Reservations                         1
+Railroads                                   1
+Municipal engineering                       1
+Transportations                             1
+Cities and towns Growth                     1
+Sociology, Urban                            1
+Dams                                        1
+Acquisition of territory                    1
+Ramps (Walkways)                            1
+Industrial real estate                      1
+Building laws                               1
+Real Property                               1
+Maps, Topographic                           1
+Pavements                                   1
+Census districts                            1
+Ethnology                                   1
+Shorelines                                  1
+Barrier-free design                         1
+Cadastral maps                              1
+Median strips                               1
+
+society
+--------------------------------
+Census                                                     579
+Population Statistics                                      579
+Housing Statistics                                         401
+Boundaries                                                 386
+Demography                                                 355
+Age distribution (Demography)                              233
+Households Statistics                                      208
+Sex distribution (Demography)                              206
+Income Statistics                                          206
+Census districts                                           135
+Administrative and political divisions                     135
+Zip codes                                                  122
+Vital statistics                                           116
+Education Statistics                                       109
+Purchasing power                                           104
+Shopping                                                   103
+Heating Statistics                                         103
+Marketing                                                  103
+Consumers                                                  103
+Labor supply Statistics                                    103
+Ethnic groups Statistics                                   103
+Occupations Statistics                                     103
+Human settlements                                           83
+Sex Statistics                                              83
+Counties                                                    58
+Population                                                  53
+Villages                                                    50
+Cities and towns                                            50
+Labor supply                                                49
+Literacy                                                    47
+Caste                                                       47
+Election districts                                          39
+Elections                                                   33
+Voting                                                      33
+Political parties                                           32
+Vidhan Sabha                                                30
+Households                                                  29
+Agriculture Statistics                                      27
+Metropolitan areas                                          23
+Gross domestic product                                      22
+Postal service                                              21
+Territory, National                                         20
+Golf courses                                                19
+Population geography                                        18
+Schools                                                     13
+Cemeteries                                                  13
+States                                                      13
+Amusement parks                                              9
+Prisons                                                      9
+Legislators                                                  8
+School facilities                                            8
+Buildings                                                    7
+Military bases                                               7
+United States Congress                                       7
+Municipal buildings                                          7
+Landforms                                                    7
+Bodies of water                                              7
+Stadiums                                                     7
+Hospitals                                                    7
+Centers for the performing arts                              7
+Maps                                                         7
+Resorts                                                      7
+Recreation areas                                             7
+Correctional institutions                                    7
+Land use                                                     6
+Cities and town                                              6
+Medical care                                                 6
+Industrial statistics                                        6
+Human geography                                              6
+Public buildings                                             6
+Childbirth Statistics                                        6
+Education                                                    5
+Transportation                                               5
+Family                                                       5
+Mortality Statistics                                         5
+Zoos                                                         5
+Infrastructure (Economics)                                   5
+World Bank                                                   4
+Government aid to education                                  4
+Unesco                                                       4
+World Health Organization                                    4
+Parks                                                        4
+United Nations. General Assembly                             4
+Occupations                                                  4
+Organization of Petroleum Exporting Countries                4
+Economic statistics                                          4
+Criminal Statistics                                          4
+International Atomic Energy Agency                           4
+International agencies                                       4
+Food and Agriculture Organization of the United Nations      4
+Crime                                                        4
+International cooperation                                    4
+Marital status Statistics                                    4
+International Monetary Fund                                  4
+World Meteorological Organization                            4
+Municipal government                                         3
+Life expectancy                                              3
+Housing                                                      3
+Partition, Territorial                                       3
+Employment (Economic theory)                                 3
+Canadian provinces                                           3
+Municipal budgets                                            3
+Ethnic groups                                                3
+Recreation                                                   2
+Economic indicators                                          2
+Social indicators                                            2
+Population statistics                                        2
+Unemployment                                                 2
+Educational tests and measurements                           2
+Public schools                                               2
+High schools                                                 2
+Place names                                                  2
+Lok Sabha                                                    2
+Beaches                                                      2
+Airports                                                     2
+Migration, Internal                                          2
+Parliament                                                   2
+Museums                                                      2
+Private schools                                              2
+U.S. states                                                  2
+Health status indicators                                     2
+Cities                                                       2
+Antiquities                                                  2
+Childbirth statistics                                        2
+Towns                                                        2
+Temples                                                      1
+Building permits                                             1
+High school dropouts                                         1
+Child care services                                          1
+Scholastic Aptitude Test                                     1
+Tourism                                                      1
+Education finance                                            1
+African American students                                    1
+Hispanic American students                                   1
+Minorities                                                   1
+Ethnicity                                                    1
+Exhibitions                                                  1
+Campgrounds                                                  1
+Conquerors                                                   1
+Ethnology                                                    1
+Public institutions                                          1
+Administrative divisions                                     1
+Incas                                                        1
+Culture and tourism                                          1
+Sports                                                       1
+Great Wall                                                   1
+Demographic surveys                                          1
+HIV (viruses) Statistics                                     1
+Polling places                                               1
+Alleys                                                       1
+Dikes                                                        1
+Names (Geographical)                                         1
+Publishers and publishing                                    1
+Reservoirs                                                   1
+Catholic Church                                              1
+Police stations                                              1
+Rental housing                                               1
+Middle schools                                               1
+Welfare recipients                                           1
+Fertility, Human Statistics                                  1
+Naturalization                                               1
+Centennial Exhibition (1876 : Philadelphia, Pa.)             1
+Citizenship                                                  1
+Missions                                                     1
+College entrance achievement tests                           1
+Multilingualism                                              1
+Minority students                                            1
+Educational tests and measurments                            1
+Sociology, Urban                                             1
+Towers                                                       1
+Mass media                                                   1
+Languages                                                    1
+Bus terminals                                                1
+Trails                                                       1
+Vehicles                                                     1
+Maps, Outline and base.                                      1
+Convents                                                     1
+Maps, Pictorial                                              1
+Louisiana Purchase Exposition (1904 : Saint Louis, Mo.)      1
+School districts                                             1
+Historic sites                                               1
+Train stations                                               1
+Colonies                                                     1
+Rental Housing                                               1
+Historic buildings                                           1
+Radio broadcasting                                           1
+Yurts                                                        1
+Fertility, Human                                             1
+Human beings Migrations                                      1
+Iowa Test of Basic Skills                                    1
+Housing statistics                                           1
+Dams                                                         1
+Land settlements patterns                                    1
+City planning                                                1
+Juvenile delinquents                                         1
+Consumption (Economics)                                      1
+Universities                                                 1
+Congress                                                     1
+Colleges                                                     1
+Elementary schools                                           1
+Temples, Buddhist                                            1
+Dwellings                                                    1
+Railroads                                                    1
+Relics                                                       1
+Indian Reservations                                          1
+Television broadcasting                                      1
+Marital status                                               1
+Discovery and exploration                                    1
+Administrative and political boundaries                      1
+Government                                                   1
+Population forecasting                                       1
+Newspaper publishing                                         1
+
+structure
+--------------------------------
+Buildings                                                  817
+Maps                                                       669
+Real property                                              666
+Landowners                                                 659
+Insurance, Fire                                            658
+Census                                                     304
+Airports                                                   287
+Parks                                                      210
+Recreation areas                                           209
+Camp sites                                                 199
+Military installations                                     158
+Cemeteries                                                 156
+Rivers                                                     111
+Water                                                      103
+Religious institutions                                     101
+Shopping centers                                           101
+Apartment houses                                            98
+Sports facilities                                           42
+Human settlements                                           41
+Church buildings                                            37
+Arenas                                                      36
+School buildings                                            36
+Transportation                                              28
+Service stations                                            23
+Hospitals                                                   22
+Monuments                                                   21
+Bodies of water                                             20
+Runways (Aeronautics)                                       19
+Walls                                                       18
+Municipal buildings                                         16
+Mines and mineral resources                                 15
+Dams                                                        15
+Boundaries                                                  14
+School facilities                                           14
+Military bases                                              13
+Cities and towns                                            12
+Industrial buildings                                        12
+Religious facilities                                        12
+Infrastructure (Economics)                                  11
+Land use                                                    11
+Weirs                                                       11
+Golf courses                                                11
+Transportation buildings                                    11
+Landforms                                                   10
+Prisons                                                      9
+Locks (Hydraulic engineering)                                9
+Medical centers                                              9
+Reservoirs                                                   9
+Bus terminals                                                9
+Rifle-ranges                                                 8
+Trees                                                        8
+Ponds                                                        8
+Amusement parks                                              8
+Stadiums                                                     8
+Channels (Hydraulic engineering)                             8
+Springs                                                      8
+Centers for the performing arts                              8
+Ditches                                                      8
+Quarries and quarrying                                       8
+Sluice gates                                                 8
+Tollhouses                                                   8
+Waterways                                                    8
+Lakes                                                        8
+Seas                                                         8
+Piers                                                        7
+Marine terminals                                             7
+Correctional institutions                                    7
+Public buildings                                             7
+Terminals (Transportation)                                   7
+Camp sites, facilities, etc.                                 7
+Railroad terminals                                           7
+Railroad stations                                            6
+Medical care                                                 6
+City planning                                                6
+Watchtowers                                                  6
+Breakwaters                                                  6
+Windmills                                                    6
+Water treatment plants                                       6
+Railroads                                                    6
+Harbors                                                      6
+Water mills                                                  6
+Racetracks (Horse racing)                                    5
+Memorials                                                    5
+Chimneys                                                     5
+Cranes, derricks, etc.                                       5
+Libraries                                                    5
+Power-plants                                                 5
+Wells                                                        5
+Exhibitions                                                  5
+Hydraulic structures                                         5
+Cooling towers                                               5
+Public institutions                                          5
+Historic buildings                                           5
+Beacons                                                      5
+Schools                                                      5
+Urban land use                                               5
+Fisheries                                                    4
+Traffic signs and signals                                    4
+Crosses                                                      4
+Meteorological stations, Radar                               4
+Gas wells                                                    4
+Noise barriers                                               4
+Dolmens                                                      4
+Fortification                                                4
+Lighthouses                                                  4
+Marinas                                                      4
+Radio telescopes                                             4
+Heliports                                                    4
+Fire lookout stations                                        4
+Flues                                                        4
+Jetties                                                      4
+Domes                                                        4
+Capes (Coasts)                                               4
+Trailer camps                                                4
+Lampposts                                                    4
+Mountain resorts                                             4
+Tide stations                                                4
+Poles (Engineering)                                          4
+Museums                                                      4
+Anchorage                                                    4
+Wind turbines                                                4
+Bench-marks                                                  4
+Botanical gardens                                            4
+Scenic overlooks                                             4
+Electric lines                                               4
+Business parks                                               4
+Diversion structures (Hydraulic engineering)                 4
+Tennis courts                                                4
+Chapels                                                      4
+Columns                                                      4
+Signs and signboards                                         4
+Wharves                                                      4
+Radio beacons                                                4
+Cables                                                       4
+Skating rinks                                                4
+Drilling and boring machinery                                4
+Hedges                                                       4
+Pipe                                                         4
+Embankments                                                  3
+Universities and colleges                                    3
+Historic sites                                               3
+Farm buildings                                               3
+Antiquities                                                  3
+Shopping malls                                               3
+Petroleum refineries                                         3
+Fences                                                       3
+Factories                                                    3
+Towers                                                       3
+Land settlement patterns                                     2
+Sewage disposal plants                                       2
+Sanitation                                                   2
+Health facilities                                            2
+Radio and television towers                                  2
+Pipelines                                                    2
+Racetracks                                                   2
+Public schools                                               2
+Retail trade                                                 2
+Power plants                                                 2
+Historic districts                                           2
+Swimming pools                                               2
+Playgrounds                                                  2
+Private schools                                              2
+Ruins                                                        2
+Camp sites, facilities, etc                                  2
+Environmental regulation                                     2
+Refuse disposal facilities                                   2
+Tourism                                                      2
+Islands                                                      2
+Recreation                                                   1
+Earthwork                                                    1
+Waterworks                                                   1
+Great Wall                                                   1
+Train stations                                               1
+Demography                                                   1
+Administrative and political divisions                       1
+Mine shafts                                                  1
+Fountains                                                    1
+Gas industry                                                 1
+Navigation                                                   1
+Petroleum industry and trade                                 1
+Jails                                                        1
+Commercial buildings                                         1
+Child care services                                          1
+Oil wells                                                    1
+Post office buildings                                        1
+Bridges                                                      1
+National parks and preserves                                 1
+Nursing homes                                                1
+Names (Geographical)                                         1
+Olympics                                                     1
+Building permits                                             1
+Culture and tourism                                          1
+Post office stations and branches                            1
+Church facilities                                            1
+Campgrounds                                                  1
+Postal service                                               1
+Agriculture                                                  1
+Mosques                                                      1
+Office buildings                                             1
+Housing Statistics                                           1
+Silos                                                        1
+Snow protection                                              1
+Industrial districts                                         1
+Mountains                                                    1
+Servitudes                                                   1
+Sports                                                       1
+Racing                                                       1
+Sewerage                                                     1
+Chemical plants                                              1
+Pumping stations                                             1
+Public shelters                                              1
+Boats and boating                                            1
+Real estate management                                       1
+Roofs                                                        1
+Horse racing                                                 1
+Snowsheds                                                    1
+Education                                                    1
+Population Statistics                                        1
+Racetracks (Automobile racing)                               1
+Civil War, 1861-1865                                         1
+Public utilities                                             1
+Palaces                                                      1
+Grain elevators                                              1
+Recreation facilities                                        1
+Flumes                                                       1
+Water towers                                                 1
+Ski lifts                                                    1
+Louisiana Purchase Exposition (1904 : Saint Louis, Mo.)      1
+Intakes (Hydraulic engineering)                              1
+Aerial tramways                                              1
+Fills (Earthwork)                                            1
+Public libraries                                             1
+Information technology parks                                 1
+Roads                                                        1
+Icebergs                                                     1
+Dikes                                                        1
+Ramps (Walkways)                                             1
+Households                                                   1
+Historic preservation                                        1
+Vehicles                                                     1
+Centennial Exhibition (1876 : Philadelphia, Pa.)             1
+Population geography                                         1
+Rental Housing                                               1
+Sea ice                                                      1
+Athletic fields                                              1
+Family day care                                              1
+Convents                                                     1
+Oil storage tanks                                            1
+Research parks                                               1
+Gas manufacture and works                                    1
+Excavations (Archaeology)                                    1
+Boat ramps                                                   1
+Housing                                                      1
+Conveying machinery                                          1
+Railroad Stations                                            1
+Oil fields                                                   1
+Geophysical prospecting                                      1
+Biotechnology industries                                     1
+Government aid                                               1
+Day care centers                                             1
+Congregate housing                                           1
+Temples, Buddhist                                            1
+Transmission towers                                          1
+Universities                                                 1
+Amphitheaters                                                1
+Barrier-free design                                          1
+Emergency management                                         1
+Counties                                                     1
+Youth centers                                                1
+Senior centers                                               1
+Storage facilities                                           1
+Dwellings                                                    1
+Tanks                                                        1
+Hotels                                                       1
+Colleges                                                     1
+Aqueducts                                                    1
+Maps, Manuscript                                             1
+Storage tanks                                                1
+Government                                                   1
+Petroluem refineries                                         1
+Commuting                                                    1
+Manufacturing Industries                                     1
+
+transportation
+--------------------------------
+Transportation                                 937
+Census                                         803
+Airports                                       403
+Bodies of water                                357
+Maps                                           352
+Human settlements                              345
+Landforms                                      320
+Roads                                          258
+Land use                                       209
+Railroads                                      206
+Recreation areas                               205
+Parks                                          204
+Camp sites                                     199
+Cities and towns                               168
+Infrastructure                                 166
+Military installations                         158
+Aeronautical charts                            156
+Nautical charts                                130
+Coasts                                         130
+Harbors                                        129
+Hydrography                                    120
+Rivers                                         115
+Highways                                       107
+Water                                          103
+Cemeteries                                     103
+Religious institutions                         101
+Electric lines                                 100
+Buildings                                      100
+Pipelines                                      100
+Apartment houses                                98
+Shopping centers                                98
+Traffic surveys                                 98
+Public utilities                                68
+Infrastructure (Economics)                      51
+Streets                                         43
+Bridges                                         40
+Runways (Aeronautics)                           40
+Villages                                        17
+Administrative and political divisions          16
+Express highways                                15
+Toll roads                                      13
+Railroad stations                               13
+Transportation buildings                        12
+Discovery and exploration                       11
+Trails                                          11
+Terminals (Transportation)                      10
+Voyages and travels                             10
+Scientific expeditions                          10
+Local transit                                   10
+Maps, Manuscript                                10
+World maps                                       9
+Bus terminals                                    9
+Shipping                                         9
+Fortification                                    9
+Cook, James, 1728-1779.                          8
+Bus lines                                        8
+Islands                                          8
+Railroad terminals                               8
+Tunnels                                          8
+Marine terminals                                 7
+Ferries                                          7
+Canals                                           6
+Military bases                                   6
+Subways                                          5
+Bicycle trails                                   5
+Rail                                             4
+Hiking                                           4
+Postal service                                   4
+Street-railroads                                 4
+City planning                                    4
+Names, Geographical                              3
+Universities and colleges                        3
+Snowsheds                                        3
+Buses                                            3
+Reefs                                            3
+Post roads                                       3
+Public institutions                              3
+Interchanges and intersections                   3
+Camp sites, facilities, etc.                     3
+Gazetteers                                       3
+Waterways                                        3
+Wharves                                          3
+Piers                                            3
+Sidewalks                                        3
+Ports                                            3
+Aerial tramways                                  2
+Neighborhood                                     2
+Highway planning                                 2
+Inland water transportation                      2
+Sports facilities                                2
+Camp sites, facilities, etc                      2
+Shipwrecks                                       2
+Mountaineering                                   2
+Causeways                                        2
+Refuse and refuse disposal                       2
+Elevated highways                                2
+Traffic signs and signals                        2
+Names (Geographical)                             2
+Factories                                        2
+Cycling                                          2
+Bus stops                                        2
+Urban transportation                             2
+Industrial buildings                             2
+Express highway interchanges                     2
+Ferry terminals                                  2
+Transportation Planning                          2
+Intracoastal                                     2
+Railroad tunnels                                 2
+Navigation                                       2
+Runways                                          2
+Viaducts                                         2
+Refuse collection                                1
+Oil fields                                       1
+National parks and preserves                     1
+United States History Revolution, 1775-1783      1
+Commuting                                        1
+Railroads Crossings                              1
+Airplanes                                        1
+Parking lots                                     1
+Dirt roads                                       1
+Economic zones                                   1
+Chimneys                                         1
+Ski lifts                                        1
+Parking meters                                   1
+Steamboat lines                                  1
+Breakwaters                                      1
+Hospitals                                        1
+Coral reefs and islands                          1
+Highway                                          1
+Palaces                                          1
+Motor vehicles                                   1
+Boats and boating                                1
+Navy-yards and naval stations                    1
+Administrative and political districts           1
+Railroads, Elevated                              1
+Regattas                                         1
+Earthwork                                        1
+Driveways                                        1
+Windmills                                        1
+Labor supply                                     1
+Hotels                                           1
+Anchorage                                        1
+Cooling towers                                   1
+Street cleaning                                  1
+Fences                                           1
+Arenas                                           1
+Snow removal                                     1
+Vettor Pisani (Ship)                             1
+Real property                                    1
+Regional planning                                1
+Embankments                                      1
+Subway stations                                  1
+Coastal settlements                              1
+Bicycle lanes                                    1
+Beacons                                          1
+Aerial views                                     1
+Traffic flow                                     1
+Trolley buses                                    1
+Employment                                       1
+Underwater tunnels                               1
+Walls                                            1
+Containerization                                 1
+Recreation facilities                            1
+Railroad Yards                                   1
+Seaplane bases                                   1
+Radio Receivers and reception                    1
+Rails                                            1
+Central business districts                       1
+Hull Yacht Club                                  1
+Weirs                                            1
+Railway mail service                             1
+Pavements                                        1
+Snow protection                                  1
+Roadside rest areas                              1
+Mountains                                        1
+Freight                                          1
+Mosques                                          1
+Petroleum refineries                             1
+Railroads, elevated                              1
+Dams                                             1
+Helicopters                                      1
+Cargo                                            1
+Pipeline                                         1
+Terminals                                        1
+Bicycle parking                                  1
+Transportations                                  1
+Walking                                          1
+Racetracks (Horse racing)                        1
+Electronic traffic controls                      1
+Civil War, 1861-1865                             1
+Terminals (transportation)                       1
+Exhibitions                                      1
+Oceanography                                     1
+One-way streets                                  1
+Traffic density                                  1
+Centers for the performing arts                  1
+Turntables (Railroads)                           1
+Public spaces                                    1
+Boat ramps                                       1
+Air bases                                        1
+Cranes, derricks, etc.                           1
+Industries                                       1
+Trains                                           1
+Athletic fields                                  1
+Recycling (Waste, etc.)                          1
+Racetracks (Automobile racing)                   1
+Automobile parking                               1
+Albatross (Steamer)                              1
+Power plants                                     1
+Railroad Stations                                1
+Rail-trails                                      1
+Urban planning                                   1
+Median strips                                    1
+
+utilitiesCommunication
+--------------------------------
+Electric lines                            119
+Transportation                            111
+Pipelines                                 106
+Census                                    100
+Public utilities                           74
+Water-supply                               25
+Natural resources conservation areas       17
+Groundwater                                17
+Sewerage                                   15
+Water districts                            14
+Maps                                       10
+Bodies of water                            10
+Wellhead protection                        10
+Telephone Area codes                       10
+Telecommunications                         10
+Wellheads                                  10
+Sewer districts                            10
+Infrastructure (Economics)                  9
+Human settlements                           9
+Hydraulic structures                        7
+Cities and towns                            7
+Wells                                       7
+Land use                                    7
+Administrative and political divisions      7
+Water treatment plants                      6
+Municipal engineering                       6
+Petroleum refineries                        5
+Towers                                      5
+Aqueducts                                   5
+Power plants                                4
+Hydrology                                   4
+Waterworks                                  4
+Telecommunication lines                     4
+Storm sewers                                4
+Sewage disposal plants                      4
+Canals                                      4
+Pumping stations                            4
+Municipal services                          4
+Refuse and refuse disposal                  4
+Dams                                        3
+Oil wells                                   3
+Electric power transmission                 3
+City planning                               3
+Postal service                              3
+Catchments                                  3
+Landforms                                   3
+Hydrants                                    3
+Runoff                                      3
+Manholes                                    3
+Post roads                                  3
+Drinking water                              2
+Water towers                                2
+Water-supply engineering                    2
+Weirs                                       2
+Underground storage tanks                   2
+Flood control                               2
+Water quality                               2
+Sanitation                                  2
+Water utilities                             2
+Telecommunication                           2
+Environmental regulation                    2
+Recycling (Waste, etc.)                     2
+Names (Geographical)                        2
+Watersheds                                  2
+Watchtowers                                 2
+Water distribution                          2
+Ski lifts                                   2
+Water pipes                                 2
+Water quality monitoring stations           2
+Radio and television towers                 2
+Refuse collection                           2
+Petroleum products underground storage      2
+Insurance                                   2
+Refuse disposal facilities                  2
+Storage facilities                          2
+Chemical plants                             2
+Fire stations                               2
+Buildings                                   2
+Gas wells                                   2
+Snow removal                                2
+Electric substations                        2
+Power-plants                                2
+Floodplain management                       2
+Petroluem refineries                        1
+Gas industry                                1
+Water aeration                              1
+Petroleum industry and trade                1
+Street cleaning                             1
+Military bases                              1
+Runways                                     1
+Mines and mineral resources                 1
+Cemeteries                                  1
+Telephone lines                             1
+Telecommunications lines                    1
+Cables, Submarine                           1
+Fire extinction                             1
+Petroleum pipelines                         1
+Wet Wells                                   1
+Gas fields                                  1
+Electric power distribution                 1
+Water supply                                1
+Water quality management                    1
+Wachtowers                                  1
+Newspaper publishing                        1
+Gas companies                               1
+Electric power-plants                       1
+Racetracks                                  1
+Urban runoff                                1
+Water-pipes                                 1
+Telecommunication systems                   1
+Gas manufacture and works                   1
+Transmission towers                         1
+Fuelbreaks                                  1
+Waste products                              1
+Cellular telephone services industry        1
+Sidewalks                                   1
+Pumping machinery                           1
+Sewage purification                         1
+Mass media                                  1
+Oil storage tanks                           1
+Fisheries                                   1
+Hydrography                                 1
+Sewer-pipe                                  1
+Salt mines and mining                       1
+Fire protection districts                   1
+Radio broadcasting                          1
+Poles                                       1
+Power transmission                          1
+Railroads                                   1
+Real property                               1
+Emergency water supply                      1
+Intakes (Hydraulic engineering)             1
+Biotechnology industries                    1
+Springs                                     1
+Factories                                   1
+Telegraph lines                             1
+Television stations                         1
+Tanks                                       1
+Radio stations                              1
+Boundaries                                  1
+Oils fields                                 1
+Storage tanks                               1
+Broadcasting                                1
+Railway mail service                        1
+Television broadcasting                     1
+Pipes                                       1
+Administrative and political districts      1
+Groundwater disposal                        1
+Industries                                  1
+Drainage pipes                              1
+Oil fields                                  1
+Waste disposal sites                        1
+Flumes                                      1
+Islands                                     1
+Electric Lines                              1
+Fuel                                        1
+Sewage Sludge                               1
+Telephone area codes                        1
+Penstocks                                   1
+Maps, Topographic                           1
+Publishers and publishing                   1
+Police stations                             1
+Airports                                    1
+Storm Sewers                                1
+
+inlandWater
+--------------------------------
+Rivers                             20
+Hydrography                        12
+Reservoirs                         10
+Lakes                               9
+Streams                             8
+Hydraulic structures                7
+Canals                              6
+Waterfalls                          4
+Ponds                               4
+Shorelines                          4
+Hydrology                           4
+Dams                                4
+Water                               4
+Glaciers                            3
+Wells                               3
+Islands                             3
+Coasts                              3
+Flood control                       3
+Watersheds                          3
+Aqueducts                           3
+Transportation                      2
+Ports                               2
+Insurance                           2
+Floodplain management               2
+Weirs                               2
+Inland water transportation         2
+Floods                              2
+Waterways                           2
+Fords (Stream crossings)            2
+Intracoastal                        2
+Rapids                              2
+Swamps                              2
+Shipping                            2
+Landforms                           1
+Locks (Hydraulic engineering)       1
+Bodies of water                     1
+Storm sewers                        1
+Bays                                1
+Urban land use                      1
+Catchments                          1
+Oases                               1
+Deserts                             1
+Groundwater                         1
+Qanats                              1
+Intakes (Hydraulic engineering)     1
+Municipal engineering               1
+Springs                             1
+Towers                              1
+Runoff                              1
+Environmental management            1
+Floodplains                         1
+Wachtowers                          1
+
+militaryIntelligence
+--------------------------------
+Maps                                           2
+United States History Revolution, 1775-1783    2
+Bodies of water                                2
+Transportation                                 2
+Land use                                       2
+Infrastructure (Economics)                     2
+Fortification                                  2
+Human settlements                              2
+
+Boundaries
+--------------------------------
+Boundaries           1
+Boundaries, State    1
+Counties             1
+
+intelligence
+--------------------------------
+Fortification                     3
+Athletic fields                   1
+Racetracks (Horse racing)         1
+Racetracks (Automobile racing)    1
+
+geoscientificInfo
+--------------------------------
+Mountains    1
