@@ -1,6 +1,8 @@
 # updateLACensus.py
 # Gerald Walden
 # 4/8/2022
+# Revised by Marc McGee 4/25/2022 - added routines for spdoinfo and spref sections and
+#   	to handle transportation layers
 # - Place metadata snippet files in 'snippets' folder
 #   * Confirm snippet file paths in code below
 # - Place xml files to be updated in 'source' folder
@@ -23,6 +25,7 @@ from lxml import etree as et
  This variable is used in the main() method toward the bottom of the file.
  Use in case the script is not finding the correct path. 
 '''
+#update working directory
 working_directory = "/Bolivia_2012/python"
 
 '''
@@ -54,6 +57,7 @@ themekeys = {
 	"housing" : "snippet/LCSH_themekeys_housing.txt",
 	"migration" : "snippet/LCSH_themekeys_migration.txt",
 	"social": "snippet/LCSH_themekeys_social.txt",
+	# update transportation by uncommenting if transportation layer present
     #"transportation": "snippet/LCSH_themekeys_transportation.txt",
 }
 
@@ -213,8 +217,6 @@ def runProcess(fname, fpath):
 		except Exception as e:
 			errorMsg(e)
 
-		# <spdo>, <spref> could be added, if first exported from shapefile
-		# See step 17 on https://wiki.harvard.edu/confluence/x/7wfaE
 
 		announce(fname, "Replace spdoinfo")
 		try:
